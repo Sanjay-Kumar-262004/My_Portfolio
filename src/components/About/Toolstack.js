@@ -17,6 +17,7 @@ function Toolstack() {
       </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
+        <h5>VsCode</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <FaGithub />
