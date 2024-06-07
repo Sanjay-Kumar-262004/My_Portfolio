@@ -39,7 +39,7 @@ function NavBar() {
     >
       <Container>
       <Navbar.Brand href="/" className="d-flex">
-  <span style={{ color: 'violet', fontWeight: 'bold' }}>SK</span>
+  <span><h4><b className="purple">S K</b></h4></span>
 </Navbar.Brand>
 
         <Navbar.Toggle
