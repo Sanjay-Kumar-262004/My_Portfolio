@@ -4,7 +4,8 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/about.jpg";
+import Tilt from "react-parallax-tilt";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -22,17 +23,19 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              About <strong className="purple">Me</strong>
             </h1>
             <Aboutcard />
           </Col>
           <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
+      md={5}
+      style={{ paddingTop: "10px", paddingBottom: "50px", borderRadius: "5px" }}
+      className="about-img"
+    >
+      <Tilt>
+        <img src={laptopImg} alt="about" className="img-fluid" style={{ borderRadius: "50%" }} />
+      </Tilt>
+    </Col>
         </Row>
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
