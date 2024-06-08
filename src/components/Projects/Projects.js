@@ -4,10 +4,12 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import webture from "../../Assets/Projects/webture.jpg";
 import decode from "../../Assets/Projects/decode.jpg";
-import sensors2 from "../../Assets/Projects/sensors2.jpg";
 import sensors from "../../Assets/Projects/sensors.jpg";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ecobin from "../../Assets/Projects/ecobin.jpg";
+import volunteer1 from "../../Assets/Projects/coordinator1.jpg";
+import volunteer2 from "../../Assets/Projects/PDP Certificate.jpeg";
+import volunteer3 from "../../Assets/Projects/abet.jpg";
+import volunteer4 from "../../Assets/Projects/conclave.jpg";
 
 function Projects() {
   return (
@@ -15,19 +17,18 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-           <strong className="purple">Workshops & Hackathons</strong>
+          <strong className="purple">Workshops & Hackathons</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few Workshops & Hackathons I've attended
         </p>
-        {/* Workshop contents */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={webture}
               isBlog={false}
-              title= <strong className="purple">WEBTURE</strong>
-              description="Completed a comprehensive Web Development bootcamp conducted by IEEE SRMIST Student Branch . The program covered a wide range of topics including HTML, CSS, JavaScript, and various web development frameworks. Throughout the course, I gained hands-on experience working on various projects, which helped me build a strong foundation in web development."
+              title={<strong className="purple">WEBTURE</strong>}
+              description="Completed a comprehensive Web Development bootcamp conducted by IEEE SRMIST Student Branch. The program covered a wide range of topics including HTML, CSS, JavaScript, and various web development frameworks. Throughout the course, I gained hands-on experience working on various projects, which helped me build a strong foundation in web development."
             />
           </Col>
 
@@ -35,51 +36,91 @@ function Projects() {
             <ProjectCard
               imgPath={decode}
               isBlog={false}
-              title=<strong className="purple">DECODE HOUR</strong>
+              title={<strong className="purple">DECODE HOUR</strong>}
               description="Participated in a Codeathon conducted by Newton School Coding Club SRMIST and it was an incredible experience!"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-               imgPath={sensors} 
+              imgPath={sensors}
               isBlog={false}
-              title=<strong className="purple">Sensors and IoT For Smart Healthcare</strong>
-              description="Participated in a Workshop conducted by IE(I) on the Topic Senors & IoT for smart Healthcare gained Hands on experience!"             
+              title={<strong className="purple">Sensors and IoT For Smart Healthcare</strong>}
+              description="Participated in a Workshop conducted by IE(I) on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience!"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={leaf}
+              imgPath={ecobin}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title={<strong className="purple">ECOBIN HACKATHON</strong>}
+              description="Participated in the 'Smart ECOBIN Hackathon' along with my teammates Rohan Reddy and Shivaram Kumar V.R, organized on 'Engineers Day - 23' by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some truly innovative ideas from fellow teams."
+            />
+          </Col>
+        </Row>
+
+        <h1 className="project-heading" style={{ marginTop: "50px" }}>
+          <strong className="purple">Volunteering</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are some volunteering activities I've been involved in
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={volunteer1}
+              isBlog={false}
+              title={<strong className="purple">Emerging Trends in IoT and It's Applications</strong>}
+              description="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a 6-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={volunteer2}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title={<strong className="purple">Emerging Trends in Artificial Intelligence</strong>}
+              description="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a 3-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={volunteer3}
+              isBlog={false}
+              title={<strong className="purple">ABET Accrediation</strong>}
+              description="I held the position of Student Representative for ABET Accreditation in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department."
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={volunteer4}
+              isBlog={false}
+              title={<strong className="purple">RAEEUCCI-2023</strong>}
+              description="I was one of the representative to attend The 2nd International conference on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' (RAEEUCCI-2023) Industry Conclave."
+            />
+          </Col>
+        </Row>
+        <h1 className="project-heading" style={{ marginTop: "50px" }}>
+          <strong className="purple">Internships & Projects</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are some internships and projects I've been involved in
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              // imgPath={internship1}
+              title={<strong className="purple">Internship at XYZ Company</strong>}
+              description="Completed a summer internship at XYZ Company where I worked on developing and optimizing algorithms for data processing. Gained valuable experience in software development and teamwork."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // imgPath={internship2}
+              title={<strong className="purple">Capstone Project: Smart Home System</strong>}
+              description="Worked on a capstone project to develop a Smart Home System using IoT technologies. The project involved designing and implementing a network of sensors and actuators to automate and monitor home appliances."
             />
           </Col>
         </Row>
