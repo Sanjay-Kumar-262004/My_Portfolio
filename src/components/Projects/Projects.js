@@ -2,11 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import 'react-slideshow-image/dist/styles.css'
 import webture from "../../Assets/Projects/webture.jpg";
 import decode from "../../Assets/Projects/decode.jpg";
 import sensors from "../../Assets/Projects/sensors.jpg";
 import ecobin from "../../Assets/Projects/ecobin.jpg";
 import volunteer1 from "../../Assets/Projects/coordinator1.jpg";
+import volunteer1_2 from "../../Assets/Projects/coordinator2.jpg";
 import volunteer2 from "../../Assets/Projects/PDP Certificate.jpeg";
 import volunteer3 from "../../Assets/Projects/abet.jpg";
 import volunteer4 from "../../Assets/Projects/conclave.jpg";
