@@ -7,7 +7,9 @@ import { Slide } from 'react-slideshow-image';
 import webture from "../../Assets/Projects/webture.jpg";
 import decode from "../../Assets/Projects/decode.jpg";
 import sensors from "../../Assets/Projects/sensors.jpg";
+import sensors2 from "../../Assets/Projects/sensors2.jpg"
 import ecobin from "../../Assets/Projects/ecobin.jpg";
+import ecobin2 from "../../Assets/Projects/ecobin2.jpg";
 import volunteer1 from "../../Assets/Projects/coordinator1.jpg";
 import volunteer1_2 from "../../Assets/Projects/coordinator2.jpg";
 import volunteer2 from "../../Assets/Projects/PDP Certificate.jpeg";
@@ -43,22 +45,66 @@ function Projects() {
               description="Participated in a Codeathon conducted by Newton School Coding Club SRMIST and it was an incredible experience! The mentors and organizers provided invaluable guidance, making the entire experience both educational and enjoyable. Competing alongside talented coders from diverse backgrounds was truly inspiring and has motivated me to continue honing my programming abilities."
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={sensors}
               isProject={false}
               title={<strong className="purple">Sensors and IoT For Smart Healthcare</strong>}
-              description="Participated in a Workshop conducted by IE(I) on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the integration of sensors and IoT technologies in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals."
+              slides={
+                <Slide autoplay={false}>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${sensors})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${sensors2})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                </Slide>
+              }
+              descriptionText="Participated in a Workshop conducted by IE(I) on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the integration of sensors and IoT technologies in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals."
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ecobin}
               isProject={false}
               title={<strong className="purple">ECOBIN HACKATHON</strong>}
-              description="Participated in the 'Smart ECOBIN Hackathon' along with my teammates Rohan Reddy and Shivaram Kumar V.R, organized on 'Engineers Day - 23' by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some truly innovative ideas from fellow teams."
+              slides={
+                <Slide autoplay={false}>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${ecobin})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${ecobin2})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                </Slide>
+              }
+              descriptionText="Participated in the 'Smart ECOBIN Hackathon' along with my teammates Rohan Reddy and Shivaram Kumar V.R, organized on 'Engineers Day - 23' by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some truly innovative ideas from fellow teams."
             />
           </Col>
         </Row>
