@@ -26,7 +26,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={webture}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">WEBTURE</strong>}
               description="Completed a comprehensive Web Development bootcamp conducted by IEEE SRMIST Student Branch. The program covered a wide range of topics including HTML, CSS, JavaScript, and various web development frameworks. Throughout the course, I gained hands-on experience working on various projects, which helped me build a strong foundation in web development."
             />
@@ -35,25 +35,25 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={decode}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">DECODE HOUR</strong>}
-              description="Participated in a Codeathon conducted by Newton School Coding Club SRMIST and it was an incredible experience!"
+              description="Participated in a Codeathon conducted by Newton School Coding Club SRMIST and it was an incredible experience! The mentors and organizers provided invaluable guidance, making the entire experience both educational and enjoyable. Competing alongside talented coders from diverse backgrounds was truly inspiring and has motivated me to continue honing my programming abilities."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={sensors}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">Sensors and IoT For Smart Healthcare</strong>}
-              description="Participated in a Workshop conducted by IE(I) on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience!"
+              description="Participated in a Workshop conducted by IE(I) on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the integration of sensors and IoT technologies in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ecobin}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">ECOBIN HACKATHON</strong>}
               description="Participated in the 'Smart ECOBIN Hackathon' along with my teammates Rohan Reddy and Shivaram Kumar V.R, organized on 'Engineers Day - 23' by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some truly innovative ideas from fellow teams."
             />
@@ -70,7 +70,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={volunteer1}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">Emerging Trends in IoT and It's Applications</strong>}
               description="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a 6-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
             />
@@ -79,7 +79,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={volunteer2}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">Emerging Trends in Artificial Intelligence</strong>}
               description="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a 3-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
             />
@@ -87,7 +87,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={volunteer3}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">ABET Accrediation</strong>}
               description="I held the position of Student Representative for ABET Accreditation in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department."
             />
@@ -95,7 +95,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={volunteer4}
-              isBlog={false}
+              isProject={false}
               title={<strong className="purple">RAEEUCCI-2023</strong>}
               description="I was one of the representative to attend The 2nd International conference on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' (RAEEUCCI-2023) Industry Conclave."
             />
