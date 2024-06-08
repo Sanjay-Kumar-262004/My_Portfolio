@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import 'react-slideshow-image/dist/styles.css'
+import 'react-slideshow-image/dist/styles.css';
+import { Slide } from 'react-slideshow-image';
 import webture from "../../Assets/Projects/webture.jpg";
 import decode from "../../Assets/Projects/decode.jpg";
 import sensors from "../../Assets/Projects/sensors.jpg";
@@ -71,10 +72,33 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={volunteer1}
               isProject={false}
               title={<strong className="purple">Emerging Trends in IoT and It's Applications</strong>}
-              description="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a 6-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
+              slides={
+                <Slide autoplay={false}>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${volunteer1})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${volunteer1_2})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                </Slide>
+              }
+              descriptionText="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a 6-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
             />
           </Col>
 

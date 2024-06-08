@@ -745,7 +745,9 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
+  background-size: contain; /* Change to contain to make the image fully visible */
+  background-position: center;
+  background-repeat: no-repeat;
   height: 350px;
 }
 
