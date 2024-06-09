@@ -7,7 +7,7 @@ import { Slide } from 'react-slideshow-image';
 import webture from "../../Assets/Projects/webture.jpg";
 import decode from "../../Assets/Projects/decode.jpg";
 import sensors from "../../Assets/Projects/sensors.jpg";
-import sensors2 from "../../Assets/Projects/sensors2.jpg"
+import sensors2 from "../../Assets/Projects/sensors2.jpg";
 import ecobin from "../../Assets/Projects/ecobin.jpg";
 import ecobin2 from "../../Assets/Projects/ecobin2.jpg";
 import volunteer1 from "../../Assets/Projects/coordinator1.jpg";
@@ -28,18 +28,18 @@ function Projects() {
           Here are a few Workshops & Hackathons I've attended
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
-  <ProjectCard
-    imgPath={webture}
-    isProject={false}
-    title={<strong className="purple">WEBTURE</strong>}
-    description={(
-      <span>
-        Completed a comprehensive <strong className="purple">Web Development</strong> bootcamp conducted by IEEE SRMIST Student Branch. The program covered a wide range of topics including <strong className="purple">HTML, CSS, JavaScript</strong>, and various web development frameworks. Throughout the course, I gained hands-on experience working on various projects, which helped me build a strong foundation in web development.
-      </span>
-    )}
-  />
-</Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={webture}
+              isProject={false}
+              title={<strong className="purple">WEBTURE</strong>}
+              description={(
+                <span>
+                  Completed a comprehensive <strong className="purple">Web Development</strong> bootcamp conducted by IEEE SRMIST Student Branch. The program covered a wide range of topics including <strong className="purple">HTML, CSS, JavaScript</strong>, and various web development frameworks. Throughout the course, I gained hands-on experience working on various projects, which helped me build a strong foundation in web development.
+                </span>
+              )}
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -50,8 +50,9 @@ function Projects() {
                 <span>Participated in a <strong className="purple">Codeathon</strong> conducted by Newton School Coding Club SRMIST and it was an incredible experience! The mentors and organizers provided invaluable guidance, making the entire experience both educational and enjoyable. Competing alongside talented coders from diverse backgrounds was <strong className="purple">truly inspiring</strong> and has motivated me to continue honing my programming abilities.
                 </span>
               )}
-              />
+            />
           </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               isProject={false}
@@ -82,10 +83,11 @@ function Projects() {
               }
               description={( 
                 <span>Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals."
-            </span>
-            )}
+                </span>
+              )}
             />
           </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               isProject={false}
@@ -116,7 +118,7 @@ function Projects() {
               }
               description={(
                 <span>
-                  Participated in the 'Smart ECOBIN Hackathon' along with my teammates &nbsp;
+                  Participated in the 'Smart ECOBIN Hackathon' along with my teammates&nbsp;
                   <strong className="purple">
                     <a href="https://www.linkedin.com/in/rohanrdy/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
                       Rohan Reddy
@@ -182,6 +184,7 @@ function Projects() {
               description="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a 3-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
             />
           </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={volunteer3}
@@ -190,6 +193,7 @@ function Projects() {
               description="I held the position of Student Representative for ABET Accreditation in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department."
             />
           </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={volunteer4}
@@ -199,6 +203,7 @@ function Projects() {
             />
           </Col>
         </Row>
+        
         <h1 className="project-heading" style={{ marginTop: "50px" }}>
           <strong className="purple">Internships & Projects</strong>
         </h1>
