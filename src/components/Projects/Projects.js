@@ -28,22 +28,29 @@ function Projects() {
           Here are a few Workshops & Hackathons I've attended
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={webture}
-              isProject={false}
-              title={<strong className="purple">WEBTURE</strong>}
-              description="Completed a comprehensive Web Development bootcamp conducted by IEEE SRMIST Student Branch. The program covered a wide range of topics including HTML, CSS, JavaScript, and various web development frameworks. Throughout the course, I gained hands-on experience working on various projects, which helped me build a strong foundation in web development."
-            />
-          </Col>
+        <Col md={4} className="project-card">
+  <ProjectCard
+    imgPath={webture}
+    isProject={false}
+    title={<strong className="purple">WEBTURE</strong>}
+    description={(
+      <span>
+        Completed a comprehensive <strong className="purple">Web Development</strong> bootcamp conducted by IEEE SRMIST Student Branch. The program covered a wide range of topics including <strong className="purple">HTML, CSS, JavaScript</strong>, and various web development frameworks. Throughout the course, I gained hands-on experience working on various projects, which helped me build a strong foundation in web development.
+      </span>
+    )}
+  />
+</Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={decode}
               isProject={false}
               title={<strong className="purple">DECODE HOUR</strong>}
-              description="Participated in a Codeathon conducted by Newton School Coding Club SRMIST and it was an incredible experience! The mentors and organizers provided invaluable guidance, making the entire experience both educational and enjoyable. Competing alongside talented coders from diverse backgrounds was truly inspiring and has motivated me to continue honing my programming abilities."
-            />
+              description={( 
+                <span>Participated in a <strong className="purple">Codeathon</strong> conducted by Newton School Coding Club SRMIST and it was an incredible experience! The mentors and organizers provided invaluable guidance, making the entire experience both educational and enjoyable. Competing alongside talented coders from diverse backgrounds was <strong className="purple">truly inspiring</strong> and has motivated me to continue honing my programming abilities.
+                </span>
+              )}
+              />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -73,7 +80,10 @@ function Projects() {
                   </div>
                 </Slide>
               }
-              descriptionText="Participated in a Workshop conducted by IE(I) on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the integration of sensors and IoT technologies in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals."
+              description={( 
+                <span>Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals."
+            </span>
+            )}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -104,7 +114,23 @@ function Projects() {
                   </div>
                 </Slide>
               }
-              descriptionText="Participated in the 'Smart ECOBIN Hackathon' along with my teammates Rohan Reddy and Shivaram Kumar V.R, organized on 'Engineers Day - 23' by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some truly innovative ideas from fellow teams."
+              description={(
+                <span>
+                  Participated in the 'Smart ECOBIN Hackathon' along with my teammates &nbsp;
+                  <strong className="purple">
+                    <a href="https://www.linkedin.com/in/rohanrdy/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+                      Rohan Reddy
+                    </a>
+                  </strong>&nbsp;and&nbsp;
+                  <strong className="purple">
+                    <a href="https://www.linkedin.com/in/shivaram-kumar-v-r-b75919257/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+                      Shivaram Kumar V.R
+                    </a>
+                  </strong>, organized on 
+                  <strong className="purple">'Engineers Day - 23'</strong> by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some 
+                  <strong className="purple">&nbsp;truly innovative ideas</strong> from fellow teams.
+                </span>
+              )}
             />
           </Col>
         </Row>
