@@ -172,8 +172,12 @@ function Projects() {
                   </div>
                 </Slide>
               }
-              descriptionText="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a 6-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
-            />
+              description={(
+                <span>
+                I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a <strong className="purple">6-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
+                </span>
+                )}
+                />
           </Col>
 
           <Col md={4} className="project-card">
@@ -181,7 +185,10 @@ function Projects() {
               imgPath={volunteer2}
               isProject={false}
               title={<strong className="purple">Emerging Trends in Artificial Intelligence</strong>}
-              description="I Was one of the Student Coordinators for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a 3-day workshop organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme."
+              description={(
+                <span>I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a <strong className="purple">3-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
+            </span>
+            )}
             />
           </Col>
           
@@ -190,7 +197,10 @@ function Projects() {
               imgPath={volunteer3}
               isProject={false}
               title={<strong className="purple">ABET Accrediation</strong>}
-              description="I held the position of Student Representative for ABET Accreditation in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department."
+              description={(
+                <span>I held the position of <strong className="purple">Student Representative for ABET Accreditation</strong> in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department.
+            </span>
+            )}
             />
           </Col>
           
@@ -199,7 +209,10 @@ function Projects() {
               imgPath={volunteer4}
               isProject={false}
               title={<strong className="purple">RAEEUCCI-2023</strong>}
-              description="I was one of the representative to attend The 2nd International conference on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' (RAEEUCCI-2023) Industry Conclave."
+              description={(
+                <span>I was one of the representative to attend <strong className="purple">The 2nd International conference</strong> on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' <strong className="purple">(RAEEUCCI-2023)</strong> Industry Conclave."
+            </span>
+            )}
             />
           </Col>
         </Row>
