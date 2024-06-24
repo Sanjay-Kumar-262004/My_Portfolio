@@ -23,7 +23,7 @@ function Type() {
           .typeString('Follow Tech')
           .pauseFor(1000)
           .deleteChars(11)
-          .typeString('Manage The Class')
+          .typeString('Represent My Class')
           .pauseFor(1000)
           .start();
       }}
