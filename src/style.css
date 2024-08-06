@@ -789,3 +789,26 @@ button:focus {
   width: 20px;
   height: 20px;
 }
+.resume-section {
+  padding: 20px;
+}
+
+.resume-border {
+  position: relative;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+  }
+}
