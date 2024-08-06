@@ -54,39 +54,41 @@ function Projects() {
           </Col>
           
           <Col md={4} className="project-card">
-            <ProjectCard
-              isProject={false}
-              title={<strong className="purple">Sensors and IoT For Smart Healthcare</strong>}
-              slides={
-                <Slide autoplay={false}>
-                  <div className="each-slide-effect">
-                    <div
-                      style={{
-                        backgroundImage: `url(${sensors})`,
-                        backgroundPosition: 'center',
-                        height: '300px'
-                      }}
-                    >
-                    </div>
-                  </div>
-                  <div className="each-slide-effect">
-                    <div
-                      style={{
-                        backgroundImage: `url(${sensors2})`,
-                        backgroundPosition: 'center',
-                        height: '300px'
-                      }}
-                    >
-                    </div>
-                  </div>
-                </Slide>
-              }
-              description={( 
-                <span>Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals."
-                </span>
-              )}
-            />
-          </Col>
+  <ProjectCard
+    isProject={false}
+    title={<strong className="purple">Sensors and IoT For Smart Healthcare</strong>}
+    slides={
+      <Slide autoplay={false}>
+        <div className="each-slide-effect">
+          <div
+            style={{
+              backgroundImage: `url(${sensors})`,
+              backgroundPosition: 'center',
+              height: '300px'
+            }}
+          >
+          </div>
+        </div>
+        <div className="each-slide-effect">
+          <div
+            style={{
+              backgroundImage: `url(${sensors2})`,
+              backgroundPosition: 'center',
+              height: '300px'
+            }}
+          >
+          </div>
+        </div>
+      </Slide>
+    }
+    description={( 
+      <span>
+        Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals.
+      </span>
+    )}
+  />
+</Col>
+
           
           <Col md={4} className="project-card">
             <ProjectCard

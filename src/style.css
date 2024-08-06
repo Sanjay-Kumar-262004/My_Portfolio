@@ -724,7 +724,7 @@ button:focus {
   }
 }
 
-.fork-btn {
+/* .fork-btn {
   font-size: 1.1em !important;
   padding-top: 10px !important;
 }
@@ -744,12 +744,12 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
-}
+} */
 .each-slide-effect > div {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: contain; /* Change to contain to make the image fully visible */
+  background-size: contain; 
   background-position: center;
   background-repeat: no-repeat;
   height: 350px;
@@ -760,4 +760,32 @@ button:focus {
   font-size: 20px;
   background: #efefef;
   text-align: center;
+}
+
+.react-slideshow-container .nav {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.react-slideshow-container .nav:hover {
+  background-color: #008DDA; 
+  transform: scale(1.1);
+}
+
+.react-slideshow-container .nav:focus {
+  outline: none;
+}
+
+.react-slideshow-container .nav svg {
+  fill: black;
+  width: 20px;
+  height: 20px;
 }
