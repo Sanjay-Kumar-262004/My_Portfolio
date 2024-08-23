@@ -18,6 +18,7 @@ import volunteer4 from "../../Assets/Projects/conclave.jpg";
 import Intern1 from "../../Assets/Projects/BharatIntern.jpg";
 import Intern1_2 from "../../Assets/Projects/CodeClause1.jpg";
 import Intern1_3 from "../../Assets/Projects/CodeClause2.jpg";
+import Intern2 from "../../Assets/Projects/Salesforce.jpg";
 
 function Projects() {
   return (
@@ -268,13 +269,24 @@ function Projects() {
               }
               description={(
                 <span>
-                Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user
-                experience and drive a 25% increase in website conversions.
+                Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions.
                 </span>
                 )}
                 />
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Intern2}
+              isProject={false}
+              title={<strong className="purple">SALESFORCE VIRTUAL DEVELOPER INTERNSHIP</strong>}
+              description={(
+                <span>
+                  Completed <strong className="purple">Salesforce Internship</strong> in collaboration with AICTE Internships and completed  <strong className="purple">Fundamentals, Organizational Setup, Types Of Flows & Security, Apex, Testing & Debugging, Lightning Web Components (LWC) & API ,CRM & Visualforce</strong> and Super Badges - <strong className="purple">  Apex Specialist, Process Automation Specialist, Developer Super Set. </strong>
+                </span>
+              )}
+            />
+          </Col>
         </Row>
+        
       </Container>
     </Container>
   );
