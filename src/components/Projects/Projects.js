@@ -22,8 +22,6 @@ import Intern2 from "../../Assets/Projects/Salesforce.jpg";
 import Intern3 from "../../Assets/Projects/Juniper.jpg";
 import Intern4 from "../../Assets/Projects/WSA.jpg";
 
-
-
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -54,50 +52,49 @@ function Projects() {
               imgPath={decode}
               isProject={false}
               title={<strong className="purple">DECODE HOUR</strong>}
-              description={( 
+              description={(
                 <span>Participated in a <strong className="purple">Codeathon</strong> conducted by Newton School Coding Club SRMIST and it was an incredible experience! The mentors and organizers provided invaluable guidance, making the entire experience both educational and enjoyable. Competing alongside talented coders from diverse backgrounds was <strong className="purple">truly inspiring</strong> and has motivated me to continue honing my programming abilities.
                 </span>
               )}
             />
           </Col>
-          
-          <Col md={4} className="project-card">
-  <ProjectCard
-    isProject={false}
-    title={<strong className="purple">Sensors and IoT For Smart Healthcare</strong>}
-    slides={
-      <Slide autoplay={false}>
-        <div className="each-slide-effect">
-          <div
-            style={{
-              backgroundImage: `url(${sensors})`,
-              backgroundPosition: 'center',
-              height: '300px'
-            }}
-          >
-          </div>
-        </div>
-        <div className="each-slide-effect">
-          <div
-            style={{
-              backgroundImage: `url(${sensors2})`,
-              backgroundPosition: 'center',
-              height: '300px'
-            }}
-          >
-          </div>
-        </div>
-      </Slide>
-    }
-    description={( 
-      <span>
-        Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals.
-      </span>
-    )}
-  />
-</Col>
 
-          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isProject={false}
+              title={<strong className="purple">Sensors and IoT For Smart Healthcare</strong>}
+              slides={
+                <Slide autoplay={false}>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${sensors})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${sensors2})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                </Slide>
+              }
+              description={(
+                <span>
+                  Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals.
+                </span>
+              )}
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               isProject={false}
@@ -184,10 +181,10 @@ function Projects() {
               }
               description={(
                 <span>
-                I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a <strong className="purple">6-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
+                  I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a <strong className="purple">6-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
                 </span>
-                )}
-                />
+              )}
+            />
           </Col>
 
           <Col md={4} className="project-card">
@@ -196,125 +193,152 @@ function Projects() {
               isProject={false}
               title={<strong className="purple">Emerging Trends in Artificial Intelligence</strong>}
               description={(
-                <span>I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a <strong className="purple">3-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
-            </span>
-            )}
+                <span>
+                  I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a <strong className="purple">3-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
+                </span>
+              )}
             />
           </Col>
-          
+
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={volunteer3}
-              isProject={false}
-              title={<strong className="purple">ABET Accrediation</strong>}
-              description={(
-                <span>I held the position of <strong className="purple">Student Representative for ABET Accreditation</strong> in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department.
-            </span>
-            )}
-            />
-          </Col>
-          
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={volunteer4}
-              isProject={false}
-              title={<strong className="purple">RAEEUCCI-2023</strong>}
-              description={(
-                <span>I was one of the representative to attend <strong className="purple">The 2nd International conference</strong> on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' <strong className="purple">(RAEEUCCI-2023)</strong> Industry Conclave."
-            </span>
-            )}
-            />
-          </Col>
+
+<ProjectCard
+
+  imgPath={volunteer3}
+
+  isProject={false}
+
+  title={<strong className="purple">ABET Accrediation</strong>}
+
+  description={(
+
+    <span>I held the position of <strong className="purple">Student Representative for ABET Accreditation</strong> in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department.
+
+</span>
+
+)}
+/>
+
+</Col>
+
+<Col md={4} className="project-card">
+
+<ProjectCard
+
+  imgPath={volunteer4}
+
+  isProject={false}
+
+  title={<strong className="purple">RAEEUCCI-2023</strong>}
+
+  description={(
+
+    <span>I was one of the representative to attend <strong className="purple">The 2nd International conference</strong> on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' <strong className="purple">(RAEEUCCI-2023)</strong> Industry Conclave."
+
+</span>
+
+)}
+
+/>
+
+</Col>
         </Row>
-        
+
         <h1 className="project-heading" style={{ marginTop: "50px" }}>
-          <strong className="purple">Internships & Projects</strong>
+          <strong className="purple">Internships</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are some Virtual internships and projects I've been involved in
+          Here are some of the internships I've completed
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <ProjectCard
-              isProject={false}
-              title={<strong className="purple">Internship at CodeClause & Bharat Intern</strong>}
-              slides={
-                <Slide autoplay={false}>
-                  <div className="each-slide-effect">
-                    <div
-                      style={{
-                        backgroundImage: `url(${Intern1})`,
-                        backgroundPosition: 'center',
-                        height: '300px'
-                      }}
-                    >
-                    </div>
-                  </div>
-                  <div className="each-slide-effect">
-                    <div
-                      style={{
-                        backgroundImage: `url(${Intern1_2})`,
-                        backgroundPosition: 'center',
-                        height: '300px'
-                      }}
-                    >
-                    </div>
-                  </div>
-                  <div className="each-slide-effect">
-                    <div
-                      style={{
-                        backgroundImage: `url(${Intern1_3})`,
-                        backgroundPosition: 'center',
-                        height: '300px'
-                      }}
-                    >
-                    </div>
-                  </div>
-                </Slide>
-              }
-              description={(
-                <span>
-                Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions.
-                </span>
-                )}
-                />
+        <Col md={4} className="project-card">
+  <ProjectCard
+    isProject={false}
+    title={<strong className="purple">Internship at CodeClause & Bharat Intern</strong>}
+    slides={
+      <div>
+        <Slide autoplay={false}>
+          <div className="each-slide-effect">
+            <div
+              style={{
+                backgroundImage: `url(${Intern1})`,
+                backgroundPosition: 'center',
+                height: '300px',
+              }}
+            >
+            </div>
+          </div>
+          <div className="each-slide-effect">
+            <div
+              style={{
+                backgroundImage: `url(${Intern1_2})`,
+                backgroundPosition: 'center',
+                height: '300px',
+              }}
+            >
+            </div>
+          </div>
+          <div className="each-slide-effect">
+            <div
+              style={{
+                backgroundImage: `url(${Intern1_3})`,
+                backgroundPosition: 'center',
+                height: '300px',
+              }}
+            >
+            </div>
+          </div>
+        </Slide>
+        <div style={{ marginTop: '15px', color: 'white' }}>
+          <span>
+            Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions.
+          </span>
+        </div>
+      </div>
+    }
+  />
+</Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Intern2}
               isProject={false}
-              title={<strong className="purple">SALESFORCE VIRTUAL DEVELOPER INTERNSHIP</strong>}
+              title={<strong className="purple">Salesforce Virtual Internship</strong>}
               description={(
                 <span>
-                  Completed <strong className="purple">Salesforce Internship</strong> in collaboration with AICTE Internships and completed  <strong className="purple">Fundamentals, Organizational Setup, Types Of Flows & Security, Apex, Testing & Debugging, Lightning Web Components (LWC) & API ,CRM & Visualforce</strong> and Super Badges - <strong className="purple">  Apex Specialist, Process Automation Specialist, Developer Super Set. </strong>
+                  Completed the <strong className="purple">Salesforce Virtual Internship</strong>, gaining hands-on experience in CRM and cloud-based solutions.
                 </span>
               )}
             />
           </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Intern3}
               isProject={false}
-              title={<strong className="purple">JUNIPER CLOUD VIRTUAL INTERNSHIP</strong>}
+              title={<strong className="purple">Juniper Networks Virtual Internship</strong>}
               description={(
                 <span>
-                  Completed <strong className="purple">Juniper Cloud Internship</strong> in collaboration with AICTE Internships and Learnt about <strong className="purple">Cloud networking concepts Introduction (OpenStack, Kubernetes), Network Virtualization & SDN </strong> 
+                  Completed a virtual internship at <strong className="purple">Juniper Networks</strong>, specializing in networking and cybersecurity.
                 </span>
               )}
             />
           </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Intern4}
               isProject={false}
-              title={<strong className="purple">WEB STACK ACADEMY INTERNSHIP</strong>}
+              title={<strong className="purple">WSA Internship</strong>}
               description={(
                 <span>
-                  Completed <strong className="purple">WS ACADEMY's MERN STACK VIRTUAL INTERNSHIP </strong> and Developed a Prototype of Airbnb named as  <strong className="purple">AIRSTAY.</strong>I have mainly focused on Frontend Development of the Project and learned insights about Backend. Throughout this journey, I gained invaluable experience and sharpened my skills in <strong className="purple">full-stack development.</strong> The chance to collaborate with a talented team and receive mentorship from industry experts has been invaluable. I've learned not only the technical intricacies of the MERN stack but also the <strong className="purple">importance of teamwork, communication, and project management.</strong> 
+                  Contributed to <strong className="purple">Web Security</strong> projects, gaining valuable insights into cybersecurity.
                 </span>
               )}
             />
           </Col>
         </Row>
-        
       </Container>
     </Container>
   );
