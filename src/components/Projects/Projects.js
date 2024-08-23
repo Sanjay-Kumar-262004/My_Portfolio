@@ -15,6 +15,9 @@ import volunteer1_2 from "../../Assets/Projects/coordinator2.jpg";
 import volunteer2 from "../../Assets/Projects/PDP Certificate.jpeg";
 import volunteer3 from "../../Assets/Projects/abet.jpg";
 import volunteer4 from "../../Assets/Projects/conclave.jpg";
+import Intern1 from "../../Assets/Projects/BharatIntern.jpg";
+import Intern1_2 from "../../Assets/Projects/CodeClause1.jpg";
+import Intern1_3 from "../../Assets/Projects/CodeClause2.jpg";
 
 function Projects() {
   return (
@@ -223,24 +226,54 @@ function Projects() {
           <strong className="purple">Internships & Projects</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are some internships and projects I've been involved in
+          Here are some Virtual internships and projects I've been involved in
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              // imgPath={internship1}
-              title={<strong className="purple">Internship at XYZ Company</strong>}
-              description="Completed a summer internship at XYZ Company where I worked on developing and optimizing algorithms for data processing. Gained valuable experience in software development and teamwork."
-            />
-          </Col>
+        <ProjectCard
+              isProject={false}
+              title={<strong className="purple">Internship at CodeClause & Bharat Intern</strong>}
+              slides={
+                <Slide autoplay={false}>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${Intern1})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${Intern1_2})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                  <div className="each-slide-effect">
+                    <div
+                      style={{
+                        backgroundImage: `url(${Intern1_3})`,
+                        backgroundPosition: 'center',
+                        height: '300px'
+                      }}
+                    >
+                    </div>
+                  </div>
+                </Slide>
+              }
+              description={(
+                <span>
+                Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user
+                experience and drive a 25% increase in website conversions.
+                </span>
+                )}
+                />
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              // imgPath={internship2}
-              title={<strong className="purple">Capstone Project: Smart Home System</strong>}
-              description="Worked on a capstone project to develop a Smart Home System using IoT technologies. The project involved designing and implementing a network of sensors and actuators to automate and monitor home appliances."
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
