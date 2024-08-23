@@ -19,6 +19,10 @@ import Intern1 from "../../Assets/Projects/BharatIntern.jpg";
 import Intern1_2 from "../../Assets/Projects/CodeClause1.jpg";
 import Intern1_3 from "../../Assets/Projects/CodeClause2.jpg";
 import Intern2 from "../../Assets/Projects/Salesforce.jpg";
+import Intern3 from "../../Assets/Projects/Juniper.jpg";
+import Intern4 from "../../Assets/Projects/WSA.jpg";
+
+
 
 function Projects() {
   return (
@@ -281,6 +285,30 @@ function Projects() {
               description={(
                 <span>
                   Completed <strong className="purple">Salesforce Internship</strong> in collaboration with AICTE Internships and completed  <strong className="purple">Fundamentals, Organizational Setup, Types Of Flows & Security, Apex, Testing & Debugging, Lightning Web Components (LWC) & API ,CRM & Visualforce</strong> and Super Badges - <strong className="purple">  Apex Specialist, Process Automation Specialist, Developer Super Set. </strong>
+                </span>
+              )}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Intern3}
+              isProject={false}
+              title={<strong className="purple">JUNIPER CLOUD VIRTUAL INTERNSHIP</strong>}
+              description={(
+                <span>
+                  Completed <strong className="purple">Juniper Cloud Internship</strong> in collaboration with AICTE Internships and Learnt about <strong className="purple">Cloud networking concepts Introduction (OpenStack, Kubernetes), Network Virtualization & SDN </strong> 
+                </span>
+              )}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Intern4}
+              isProject={false}
+              title={<strong className="purple">WEB STACK ACADEMY INTERNSHIP</strong>}
+              description={(
+                <span>
+                  Completed <strong className="purple">WS ACADEMY's MERN STACK VIRTUAL INTERNSHIP </strong> and Developed a Prototype of Airbnb named as  <strong className="purple">AIRSTAY.</strong>I have mainly focused on Frontend Development of the Project and learned insights about Backend. Throughout this journey, I gained invaluable experience and sharpened my skills in <strong className="purple">full-stack development.</strong> The chance to collaborate with a talented team and receive mentorship from industry experts has been invaluable. I've learned not only the technical intricacies of the MERN stack but also the <strong className="purple">importance of teamwork, communication, and project management.</strong> 
                 </span>
               )}
             />
