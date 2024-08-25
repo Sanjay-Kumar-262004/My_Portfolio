@@ -781,11 +781,5 @@ button:focus {
     box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
   }
 }
-.academic-performance th {
-  background-color: #F7EEDD;
-}
 
-.academic-performance td {
-  background-color: #ACE2E1;
-}
 
