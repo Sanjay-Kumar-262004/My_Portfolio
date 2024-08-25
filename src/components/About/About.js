@@ -7,6 +7,7 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.jpg";
 import Tilt from "react-parallax-tilt";
 import Toolstack from "./Toolstack";
+import AcademicPerformance from "./AcademicPerformance";
 
 function About() {
   return (
@@ -37,6 +38,10 @@ function About() {
       </Tilt>
     </Col>
         </Row>
+        <h1 className="project-heading">
+          Academic <strong className="purple">Performance </strong>
+        </h1>
+        <AcademicPerformance />
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
