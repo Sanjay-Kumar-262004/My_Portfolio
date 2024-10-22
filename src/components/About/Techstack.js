@@ -4,6 +4,8 @@ import { TiHtml5 } from "react-icons/ti";
 import { FaBootstrap } from "react-icons/fa6";
 import { DiCss3 } from "react-icons/di";
 import { SiMongodb } from "react-icons/si";
+import { LiaSalesforce } from "react-icons/lia";
+import { TbFileTypeSql } from "react-icons/tb";
 import {
   DiJavascript1,
   DiReact,
@@ -64,6 +66,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
       <SiMongodb />
         <h5>MongoDb ( Basics ) </h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <TbFileTypeSql />
+        <h5>SQL ( Basics ) </h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <LiaSalesforce />
+        <h5>Salesforce</h5>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
