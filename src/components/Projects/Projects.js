@@ -27,19 +27,12 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-      <div 
-  style={{
-    color: "#008DDA", 
-    fontWeight: "bold", 
-    padding: "10px", 
-    border: "1px solid #ddd", 
-    borderRadius: "5px"
-  }}
->
-  <marquee behavior="scroll" direction="left">
-    Note : This page is being updated. Stay tuned for fresh and exciting content coming soon !
+      <div className="update-marquee">
+  <marquee behavior="scroll" direction="left" scrollamount="10">
+    Note : This page is being updated. Fresh contents coming soon !
   </marquee>
 </div>
+
         <h1 className="project-heading">
           <strong className="purple">Workshops & Hackathons</strong>
         </h1>
