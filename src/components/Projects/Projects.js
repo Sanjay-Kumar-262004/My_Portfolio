@@ -296,6 +296,16 @@
               >
               </div>
             </div>
+            <div className="each-slide-effect">
+              <div
+                style={{
+                  backgroundImage: `url(${Intern1_3})`,
+                  backgroundPosition: 'center',
+                  height: '300px',
+                }}
+              >
+              </div>
+            </div>
           </Slide>
           <h4 style={{ textAlign: 'center', color: 'white' }}>
             <strong className="purple">Internship at CodeClause & Bharat Intern</strong>
