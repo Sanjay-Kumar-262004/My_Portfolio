@@ -147,7 +147,7 @@
                 Shivaram Kumar V.R
               </a>
             </strong>, organized on 
-            <strong className="purple">'Engineers Day - 23'</strong> by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some 
+            <strong className="purple">&nbsp;'Engineers Day - 23'</strong> by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some 
             <strong className="purple">&nbsp;truly innovative ideas</strong> from fellow teams.
           </span>
           </div>
@@ -273,7 +273,6 @@
           <Col md={4} className="project-card">
     <ProjectCard
       isProject={false}
-      title={<strong className="purple">Internship at CodeClause & Bharat Intern</strong>}
       slides={
         <div>
           <Slide autoplay={false}>
@@ -297,28 +296,22 @@
               >
               </div>
             </div>
-            <div className="each-slide-effect">
-              <div
-                style={{
-                  backgroundImage: `url(${Intern1_3})`,
-                  backgroundPosition: 'center',
-                  height: '300px',
-                }}
-              >
-              </div>
-            </div>
           </Slide>
-          <div style={{ marginTop: '15px', color: 'white' }}>
-            <span>
-              Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions.
-            </span>
+          <h4 style={{ textAlign: 'center', color: 'white' }}>
+            <strong className="purple">Internship at CodeClause & Bharat Intern</strong>
+          </h4>
+          <div style={{ marginTop: '10px', color: 'white' }}>
+          <span>
+  Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions. 
+  Designed and implemented <strong className="purple">responsive web layouts</strong> using modern frameworks like React and Tailwind CSS, ensuring seamless performance across all devices. 
+  Optimized website load times by <strong className="purple">30%</strong> through advanced CSS techniques such as lazy loading and efficient use of animations.
+</span>
+
           </div>
         </div>
       }
     />
   </Col>
-
-
             <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={Intern2}
@@ -326,8 +319,14 @@
                 title={<strong className="purple">Salesforce Virtual Internship</strong>}
                 description={(
                   <span>
-                    Completed the <strong className="purple">Salesforce Virtual Internship</strong>, gaining hands-on experience in CRM and cloud-based solutions.
-                  </span>
+                  Completed a <strong className="purple">Salesforce Virtual Internship</strong>, gaining hands-on experience with the Salesforce platform and its ecosystem.  
+                  Designed and customized <strong className="purple">Salesforce Lightning components</strong> to enhance user interface and improve productivity.  
+                  Built and automated workflows using <strong className="purple">Process Builder</strong> and <strong className="purple">Flow Builder</strong> for seamless business process automation.  
+                  Created and managed <strong className="purple">custom objects</strong>, fields, and record types to tailor the Salesforce environment to specific organizational needs.   
+                  Developed <strong className="purple">reports and dashboards</strong> to provide actionable insights and support decision-making for business operations.  
+                  Strengthened understanding of <strong className="purple">Salesforce CRM functionalities</strong>, including lead and opportunity management, improving sales and marketing processes.
+                </span>
+                
                 )}
               />
             </Col>
@@ -339,8 +338,11 @@
                 title={<strong className="purple">Juniper Networks Virtual Internship</strong>}
                 description={(
                   <span>
-                    Completed a virtual internship at <strong className="purple">Juniper Networks</strong>, specializing in networking and cybersecurity.
-                  </span>
+  Completed a <strong className="purple">Juniper Cloud Virtual Internship</strong>, gaining insights into cloud networking and management.  
+  Explored concepts like <strong className="purple">SD-WAN, cloud-based infrastructure</strong>, and <strong className="purple">network automation</strong>.  
+  Enhanced understanding of modern networking solutions, focusing on scalability, reliability, and security in cloud environments.  
+</span>
+
                 )}
               />
             </Col>
@@ -352,8 +354,10 @@
                 title={<strong className="purple">WSA Internship</strong>}
                 description={(
                   <span>
-                    Contributed to <strong className="purple">Web Security</strong> projects, gaining valuable insights into cybersecurity.
-                  </span>
+                  Completed a <strong className="purple">Full Stack Web Development Internship</strong> at Web Stack Academy with a primary focus on frontend development, honing skills in building user-centric interfaces. Gained foundational insights into backend technologies like MongoDB, enhancing my understanding of database integration in web applications.
+                </span>
+                
+
                 )}
               />
             </Col>

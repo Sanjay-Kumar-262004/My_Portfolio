@@ -467,7 +467,7 @@ button:focus {
   box-shadow: 0 4px 5px 3px #F7EEDD !important;
   color: white !important;
   background-color: transparent !important;
-  /* opacity: 0.9 !important; */
+  padding-top: 20px !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
