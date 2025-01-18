@@ -467,25 +467,25 @@ button:focus {
   box-shadow: 0 4px 5px 3px #F7EEDD !important;
   color: white !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
+  /* opacity: 0.9 !important; */
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 .project-card-view:hover {
-  transform: scale(1.02) !important;
+  transform: scale(1.05) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px #41C9E2 !important;
 }
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  /* opacity: 1 !important; */
   border-radius: 10px !important;
 }
 
 .blog-img {
   padding: 0px !important;
-  opacity: 0.8 !important;
+  /* opacity: 0.8 !important; */
   border-radius: 0px !important;
 }
 
@@ -741,12 +741,14 @@ button:focus {
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  opacity: 0.5;
   transition: transform 0.2s, background-color 0.2s;
 }
 
 .react-slideshow-container .nav:hover {
   background-color: #008DDA; 
   transform: scale(1.1);
+  opacity: 1;
 }
 
 .react-slideshow-container .nav:focus {

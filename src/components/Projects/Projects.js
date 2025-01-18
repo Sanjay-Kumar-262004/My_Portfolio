@@ -75,7 +75,8 @@
                 style={{
                   backgroundImage: `url(${sensors})`,
                   backgroundPosition: 'center',
-                  height: '300px'
+                  height: '300px',
+                  paddingTop: '50px'
                 }}
               >
               </div>

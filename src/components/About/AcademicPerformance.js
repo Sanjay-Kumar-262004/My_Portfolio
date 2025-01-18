@@ -93,8 +93,8 @@ function AcademicPerformance() {
           </tr>
           <tr>
             <td style={tdStyle}>Semester 8</td>
-            <td style={tdStyle}>TBA</td>
-            <td style={tdStyle}>TBA</td>
+            <td style={tdStyle}>On-Going</td>
+            <td style={tdStyle}>On-Going</td>
           </tr>
           <tr>
             <td style={thStyle}>Overall CGPA & Percentage </td>
