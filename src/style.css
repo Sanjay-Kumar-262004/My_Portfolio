@@ -742,7 +742,7 @@ button:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   opacity: 0.5;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.8s, background-color 0.2s;
 }
 
 .react-slideshow-container .nav:hover {

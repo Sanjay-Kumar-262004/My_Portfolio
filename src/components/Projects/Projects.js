@@ -104,64 +104,37 @@
       }
     />
   </Col>
-            {/* <Col md={4} className="project-card">
-              <ProjectCard
-                isProject={false}
-                title={<strong className="purple"></strong>}
-                slides={
-                  <Slide autoplay={false}>
-                    <div className="each-slide-effect">
-                      <div
-                        
-                      >
-                      </div>
-                    </div>
-                    <div className="each-slide-effect">
-                      <div
-                        
-                      >
-                      </div>
-                    </div>
-                  </Slide>
-                }
-                description={(
-                  
-                )}
-              />
-            </Col> */}
-
-            <Col md={4} className="project-card">
+  <Col md={4} className="project-card">
     <ProjectCard
       isProject={false}
       slides={
-        <Slide autoplay={false}>
-          <div className="each-slide-effect">
-            <div
-              style={{
+        <div>
+          <Slide autoplay={false}>
+            <div className="each-slide-effect">
+              <div
+               style={{
                 backgroundImage: `url(${ecobin})`,
                 backgroundPosition: 'center',
                 height: '300px',
               }}
-            >
+              >
+              </div>
             </div>
-          </div>
-          <div className="each-slide-effect">
-            <div
-              style={{
+            <div className="each-slide-effect">
+              <div
+               style={{
                 backgroundImage: `url(${ecobin2})`,
                 backgroundPosition: 'center',
                 height: '300px',
               }}
-            >
+              >
+              </div>
             </div>
-          </div>
-        </Slide>
-      }
-      description={(
-        <div>
-          <h3 style={{ color: 'white', marginTop: '15px' }}>
+          </Slide>
+          <h4 style={{ textAlign: 'center', color: 'white' }}>
             <strong className="purple">ECOBIN HACKATHON</strong>
-          </h3>
+          </h4>
+          <div style={{ marginTop: '10px', color: 'white' }}>
           <span style={{ color: 'white' }}>
             Participated in the 'Smart ECOBIN Hackathon' along with my teammates&nbsp;
             <strong className="purple">
@@ -177,11 +150,11 @@
             <strong className="purple">'Engineers Day - 23'</strong> by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some 
             <strong className="purple">&nbsp;truly innovative ideas</strong> from fellow teams.
           </span>
+          </div>
         </div>
-      )}
+      }
     />
   </Col>
-
           </Row>
 
           <h1 className="project-heading" style={{ marginTop: "50px" }}>
