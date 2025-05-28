@@ -575,20 +575,61 @@ button:focus {
 /* Resume */
 /* --------- */
 
+/* Centered resume section with flexbox for vertical and horizontal alignment */
 .resume-section {
   position: relative !important;
-  padding-top: 110px !important;
+  padding-top: 50px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
-}
-
-.resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
+/* Centered resume container */
+.resume {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Glowing border for PDF */
+.resume-border {
+  position: relative;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 850px;
+  margin: 0 auto;
+  border: 2px solid #8a49a8;
+  animation: glowing 1.5s infinite;
+}
+
+/* Glowing animation */
+@keyframes glowing {
+  0% {
+    border-color: #8a49a8;
+    box-shadow: 0 0 5px #8a49a8, 0 0 10px #8a49a8, 0 0 15px #8a49a8;
+  }
+  50% {
+    border-color: #a56bc4;
+    box-shadow: 0 0 10px #a56bc4, 0 0 20px #a56bc4, 0 0 25px #a56bc4;
+  }
+  100% {
+    border-color: #8a49a8;
+    box-shadow: 0 0 5px #8a49a8, 0 0 10px #8a49a8, 0 0 15px #8a49a8;
+  }
+}
+
+/* Existing styles (unchanged) */
 .resume-left {
   padding-right: 80px !important;
 }
@@ -607,7 +648,20 @@ button:focus {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
+
+  /* Adjust resume and resume-border for mobile */
+  .resume {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .resume-border {
+    max-width: 100%;
+    padding: 5px;
+  }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
