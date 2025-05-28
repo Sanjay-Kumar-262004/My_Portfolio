@@ -224,7 +224,7 @@ function AcademicPerformance() {
               fontSize={12}
               fontWeight="bold"
               interval={0}
-              angle={0}
+              angle={-45}
               textAnchor="end"
               height={60}
             />
