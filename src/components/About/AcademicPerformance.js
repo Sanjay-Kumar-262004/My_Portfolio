@@ -16,14 +16,15 @@ function AcademicPerformance() {
     fontWeight: 'bold',
     padding: '12px',
     border: '1px solid #F7EEDD',
-    textAlign: 'left'
+    textAlign: 'center' // Changed to center
   };
 
   const tdStyle = {
     backgroundColor: 'transparent',
     color: '#EEF7FF',
     padding: '12px',
-    border: '1px solid #F7EEDD'
+    border: '1px solid #F7EEDD',
+    textAlign: 'center' // Changed to center
   };
 
   const overallRowStyle = {
@@ -31,7 +32,8 @@ function AcademicPerformance() {
     color: '#008DDA',
     fontWeight: 'bold',
     padding: '12px',
-    border: '1px solid #F7EEDD'
+    border: '1px solid #F7EEDD',
+    textAlign: 'center' // Changed to center
   };
 
   // SGPA data for the graph
@@ -64,49 +66,139 @@ function AcademicPerformance() {
     return null;
   };
 
-  return (
-    <div className="academic-performance" style={{ padding: '20px' }}>
-      {/* Table for X and XII */}
-      <table style={tableStyle}>
-        <thead>
-          <tr>
-            <th style={thStyle}>Education Level</th>
-            <th style={thStyle}>Marks</th>
-            <th style={thStyle}>Percentage</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style={tdStyle}>Xth Standard</td>
-            <td style={tdStyle}>456/500</td>
-            <td style={tdStyle}>91.2%</td>
-          </tr>
-          <tr>
-            <td style={tdStyle}>XIIth Standard</td>
-            <td style={tdStyle}>555.56/600</td>
-            <td style={tdStyle}>92.59%</td>
-          </tr>
-          <tr>
-            <td style={tdStyle}>B.Tech ECE</td>
-            <td style={tdStyle}>CGPA : 8.72</td>
-            <td style={tdStyle}>87.2%</td>
-          </tr>
-        </tbody>
-      </table>
+  // Responsive styles for mobile
+  const containerStyle = {
+    padding: '20px',
+    '@media (max-width: 768px)': {
+      padding: '10px'
+    }
+  };
 
-      <h4 style={{ color: "white", marginBottom: '20px' }}>
+  const graphContainerStyle = {
+    marginBottom: '30px',
+    padding: '20px',
+    border: '2.2px solid #F7EEDD',
+    borderRadius: '8px',
+    backgroundColor: 'transparent',
+    minHeight: '400px',
+    // Mobile responsive adjustments
+    '@media (max-width: 768px)': {
+      padding: '10px',
+      minHeight: '350px'
+    }
+  };
+
+  return (
+    <div className="academic-performance" style={containerStyle}>
+      {/* Add CSS for mobile responsiveness */}
+      <style jsx>{`
+        .academic-performance {
+          padding: 20px;
+        }
+        
+        .graph-container {
+          margin-bottom: 30px;
+          padding: 20px;
+          border: 2.2px solid #F7EEDD;
+          border-radius: 8px;
+          background-color: transparent;
+          min-height: 400px;
+        }
+        
+        .responsive-table {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        
+        @media (max-width: 768px) {
+          .academic-performance {
+            padding: 10px;
+          }
+          
+          .graph-container {
+            padding: 10px;
+            min-height: 350px;
+          }
+          
+          .graph-title {
+            font-size: 16px !important;
+            margin-bottom: 15px !important;
+          }
+          
+          table {
+            font-size: 14px;
+          }
+          
+          th, td {
+            padding: 8px !important;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .academic-performance {
+            padding: 5px;
+          }
+          
+          .graph-container {
+            padding: 8px;
+            min-height: 300px;
+          }
+          
+          .graph-title {
+            font-size: 14px !important;
+          }
+          
+          table {
+            font-size: 12px;
+          }
+          
+          th, td {
+            padding: 6px !important;
+          }
+        }
+      `}</style>
+
+      {/* Table for X and XII */}
+      <div className="responsive-table">
+        <table style={tableStyle}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Education Level</th>
+              <th style={thStyle}>Marks</th>
+              <th style={thStyle}>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={tdStyle}>Xth Standard</td>
+              <td style={tdStyle}>456/500</td>
+              <td style={tdStyle}>91.2%</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>XIIth Standard</td>
+              <td style={tdStyle}>555.56/600</td>
+              <td style={tdStyle}>92.59%</td>
+            </tr>
+            <tr>
+              <td style={tdStyle}>B.Tech ECE</td>
+              <td style={tdStyle}>CGPA : 8.72</td>
+              <td style={tdStyle}>87.2%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4 style={{ 
+        color: "white", 
+        marginBottom: '20px',
+        textAlign: 'center'
+      }}>
         College Academics
       </h4>
 
       {/* SGPA Graph */}
-      <div style={{ 
-        marginBottom: '30px', 
-        padding: '20px', 
-        border: '2.2px solid #F7EEDD', 
-        borderRadius: '8px',
-        backgroundColor: 'transparent'
-      }}>
-        <h5 style={{ 
+      <div className="graph-container" style={graphContainerStyle}>
+        <h5 className="graph-title" style={{ 
           color: '#008DDA', 
           textAlign: 'center', 
           marginBottom: '20px', 
@@ -115,7 +207,7 @@ function AcademicPerformance() {
         }}>
           Semester-wise SGPA Trend
         </h5>
-        <ResponsiveContainer width="100%" height={400}>
+        <ResponsiveContainer width="100%" height={300} minHeight={250}>
           <LineChart
             data={sgpaData}
             margin={{
@@ -131,9 +223,13 @@ function AcademicPerformance() {
               stroke="#EEF7FF"
               fontSize={12}
               fontWeight="bold"
+              interval={0}
+              angle={0}
+              textAnchor="end"
+              height={60}
             />
             <YAxis 
-              domain={[6, 10]}
+              domain={[4, 10]}
               stroke="#EEF7FF"
               fontSize={12}
               fontWeight="bold"
