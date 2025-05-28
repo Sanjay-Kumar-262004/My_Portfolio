@@ -229,7 +229,7 @@ function AcademicPerformance() {
               height={60}
             />
             <YAxis 
-              domain={[4, 10]}
+              domain={[6, 10]}
               stroke="#EEF7FF"
               fontSize={12}
               fontWeight="bold"
