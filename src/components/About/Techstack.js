@@ -6,11 +6,12 @@ import { DiCss3 } from "react-icons/di";
 import { SiMongodb } from "react-icons/si";
 import { LiaSalesforce } from "react-icons/lia";
 import { TbFileTypeSql } from "react-icons/tb";
+import { FaJava } from "react-icons/fa";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  // DiPython,
+  DiPython,
   DiGit,
 } from "react-icons/di";
 import {
@@ -43,6 +44,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
         <h5>Javascript</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPython />
+        <h5>Python( Intermediate )</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaJava />
+        <h5>Java( Beginner )</h5>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
@@ -87,8 +96,7 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
       </Col> */}
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+      {/* 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
