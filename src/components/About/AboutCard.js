@@ -21,7 +21,7 @@ function AboutCard() {
             <Typewriter
               options={{
                 strings: [
-                  "There will always be hurdles in life, but if you want to achieve a goal, you must continue. - Malala Yousafzai."
+                  "There will always be hurdles in life, but if you want to achieve a goal, you must continue. - Malala Yousafzai.."
                 ],
                 autoStart: true,
                 loop: false,
