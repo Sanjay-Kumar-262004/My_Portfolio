@@ -7,6 +7,7 @@ import { SiMongodb } from "react-icons/si";
 import { LiaSalesforce } from "react-icons/lia";
 import { TbFileTypeSql } from "react-icons/tb";
 import { FaJava } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
 import {
   DiJavascript1,
   DiReact,
@@ -83,6 +84,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
       <LiaSalesforce />
         <h5>Salesforce</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <FaAws />
+        <h5>AWS</h5>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
