@@ -72,9 +72,9 @@ function Projects() {
               imgPath={Todo}
               isProject={true}
               title={<strong className="purple">Task Management App</strong>}
-              description="A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features built with React and Firebase."
-              ghLink="https://github.com/yourusername/taskmanager" // Replace with your GitHub link
-              demoLink="https://yourtaskapp.com" // Replace with your live demo link
+              description="An app to manage tasks that assists users in adding and tracking daily tasks with ease. With a minimal, distraction-free interface and simple controls, it keeps task management simple, but ultimately highlights my skills of developing interactive and user-friendly interfaces."
+              ghLink="https://github.com/Sanjay-Kumar-262004/Task-Master" // Replace with your GitHub link
+              demoLink="https://task-master-neon.vercel.app" // Replace with your live demo link
             />
           </Col>
 
@@ -84,9 +84,9 @@ function Projects() {
               imgPath={Timer}
               isProject={true}
               title={<strong className="purple">Timer & Stopwatch</strong>}
-              description="Interactive weather application with location-based forecasts, charts, and alerts. Built using React, Chart.js, and OpenWeatherMap API."
-              ghLink="https://github.com/yourusername/weather-app" // Replace with your GitHub link
-              demoLink="https://yourweatherapp.com" // Replace with your live demo link
+              description="A responsive web app that can be used to start, pause, reset, and track time with ease. Designed with a focus on precision, clean design, and smooth interactions, this is a useful everyday tool."
+              ghLink="https://github.com/Sanjay-Kumar-262004/Tick-Tockr" // Replace with your GitHub link
+              demoLink="https://tick-tockr.vercel.app" // Replace with your live demo link
             />
           </Col>
         </Row>
