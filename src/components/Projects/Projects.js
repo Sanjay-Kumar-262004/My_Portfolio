@@ -22,7 +22,9 @@ import Intern2 from "../../Assets/Projects/Salesforce.jpg";
 import Intern3 from "../../Assets/Projects/Juniper.jpg";
 import Intern4 from "../../Assets/Projects/WSA.jpg";
 import Airstay from "../../Assets/Projects/Airstay.png";
-
+import Netflix from "../../Assets/Projects/Netflix.png";
+import Timer from "../../Assets/Projects/Timer.png";
+import Todo from "../../Assets/Projects/Notes.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -56,18 +58,18 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="https://via.placeholder.com/400x250?text=E-commerce+Site" // Replace with your project image
+              imgPath={Netflix}
               isProject={true}
-              title={<strong className="purple">E-commerce Platform</strong>}
-              description="Full-stack e-commerce application with user authentication, product catalog, shopping cart, and payment integration using React, Node.js, and MongoDB."
-              ghLink="https://github.com/yourusername/ecommerce" // Replace with your GitHub link
-              demoLink="https://yourecommerce.com" // Replace with your live demo link
+              title={<strong className="purple">Netflix Frontend Clone</strong>}
+              description="Netflix Clone is a frontend project that simulates the layout of Actual Netflix Site and is built in React. It has a modern, responsive design with movie rows that dynamically load in, hover effects and attractive and smooth UI interactions - built for showcasing a good modern front-end."
+              ghLink="https://github.com/Sanjay-Kumar-262004/Netflix-Clone" // Replace with your GitHub link
+              demoLink="https://netflix-clone-sk26.vercel.app" // Replace with your live demo link
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="https://via.placeholder.com/400x250?text=Task+Manager" // Replace with your project image
+              imgPath={Todo}
               isProject={true}
               title={<strong className="purple">Task Management App</strong>}
               description="A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features built with React and Firebase."
@@ -79,9 +81,9 @@ function Projects() {
           {/* Add more project cards as needed */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="https://via.placeholder.com/400x250?text=Weather+App" // Replace with your project image
+              imgPath={Timer}
               isProject={true}
-              title={<strong className="purple">Weather Dashboard</strong>}
+              title={<strong className="purple">Timer & Stopwatch</strong>}
               description="Interactive weather application with location-based forecasts, charts, and alerts. Built using React, Chart.js, and OpenWeatherMap API."
               ghLink="https://github.com/yourusername/weather-app" // Replace with your GitHub link
               demoLink="https://yourweatherapp.com" // Replace with your live demo link
