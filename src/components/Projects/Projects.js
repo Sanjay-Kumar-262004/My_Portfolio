@@ -25,6 +25,9 @@ import Airstay from "../../Assets/Projects/Airstay.png";
 import Netflix from "../../Assets/Projects/Netflix.png";
 import Timer from "../../Assets/Projects/Timer.png";
 import Todo from "../../Assets/Projects/Notes.png";
+import AWS1 from "../../Assets/Projects/AWS1.jpg";
+import AWS2 from "../../Assets/Projects/AWS2.jpg";
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -44,11 +47,10 @@ function Projects() {
           Here are some of my recent web development projects
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {/* Example Web Project 1 - Replace with your actual projects */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Airstay}
-              isProject={true}
+              isBlog={false}
               title={<strong className="purple">Airstay</strong>}
               description="AirStay is a full-stack Airbnb prototype where my primary focus was building the frontend. It provides a clean and responsive interface where users can search, filter and browse stays by location, budget and amenities, showing my abilities with React and current UI development."
               ghLink="https://github.com/Sanjay-Kumar-262004/AirStay"
@@ -59,34 +61,33 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Netflix}
-              isProject={true}
+              isBlog={false}
               title={<strong className="purple">Netflix Frontend Clone</strong>}
               description="Netflix Clone is a frontend project that simulates the layout of Actual Netflix Site and is built in React. It has a modern, responsive design with movie rows that dynamically load in, hover effects and attractive and smooth UI interactions - built for showcasing a good modern front-end."
-              ghLink="https://github.com/Sanjay-Kumar-262004/Netflix-Clone" // Replace with your GitHub link
-              demoLink="https://netflix-clone-sk26.vercel.app" // Replace with your live demo link
+              ghLink="https://github.com/Sanjay-Kumar-262004/Netflix-Clone"
+              demoLink="https://netflix-clone-sk26.vercel.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Todo}
-              isProject={true}
+              isBlog={false}
               title={<strong className="purple">Task Management App</strong>}
               description="An app to manage tasks that assists users in adding and tracking daily tasks with ease. With a minimal, distraction-free interface and simple controls, it keeps task management simple, but ultimately highlights my skills of developing interactive and user-friendly interfaces."
-              ghLink="https://github.com/Sanjay-Kumar-262004/Task-Master" // Replace with your GitHub link
-              demoLink="https://task-master-neon.vercel.app" // Replace with your live demo link
+              ghLink="https://github.com/Sanjay-Kumar-262004/Task-Master"
+              demoLink="https://task-master-neon.vercel.app"
             />
           </Col>
 
-          {/* Add more project cards as needed */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Timer}
-              isProject={true}
+              isBlog={false}
               title={<strong className="purple">Timer & Stopwatch</strong>}
               description="A responsive web app that can be used to start, pause, reset, and track time with ease. Designed with a focus on precision, clean design, and smooth interactions, this is a useful everyday tool."
-              ghLink="https://github.com/Sanjay-Kumar-262004/Tick-Tockr" // Replace with your GitHub link
-              demoLink="https://tick-tockr.vercel.app" // Replace with your live demo link
+              ghLink="https://github.com/Sanjay-Kumar-262004/Tick-Tockr"
+              demoLink="https://tick-tockr.vercel.app"
             />
           </Col>
         </Row>
@@ -99,18 +100,79 @@ function Projects() {
           Here are some of the internships I've completed
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+           <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              slides={
+                <div style={{ margin: 0, padding: 0 }}>
+                  <Slide 
+                    autoplay={false}
+                    duration={0}
+                    transitionDuration={300}
+                    canSwipe={true}
+                    indicators={true}
+                    arrows={true}
+                  >
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${AWS1})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${AWS2})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                  </Slide>
+                  <h4 style={{ textAlign: 'center', color: 'white', marginTop: '10px', marginBottom: '10px' }}>
+                    <strong className="purple">Internship at CodeClause & Bharat Intern</strong>
+                  </h4>
+                  <div style={{ color: 'white' }}>
+                    <span>
+                      Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions. 
+                      Designed and implemented <strong className="purple">responsive web layouts</strong> using modern frameworks like React and Tailwind CSS, ensuring seamless performance across all devices. 
+                      Optimized website load times by <strong className="purple">30%</strong> through advanced CSS techniques such as lazy loading and efficient use of animations.
+                    </span>
+                  </div>
+                </div>
+              }
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              isProject={false}
+              isBlog={false}
               slides={
-                <div>
-                  <Slide autoplay={false}>
+                <div style={{ margin: 0, padding: 0 }}>
+                  <Slide 
+                    autoplay={false}
+                    duration={0}
+                    transitionDuration={300}
+                    canSwipe={true}
+                    indicators={true}
+                    arrows={true}
+                  >
                     <div className="each-slide-effect">
                       <div
                         style={{
                           backgroundImage: `url(${Intern1})`,
                           backgroundPosition: 'center',
+                          backgroundSize: 'contain',
                           height: '300px',
+                          margin: 0,
                         }}
                       >
                       </div>
@@ -120,7 +182,9 @@ function Projects() {
                         style={{
                           backgroundImage: `url(${Intern1_2})`,
                           backgroundPosition: 'center',
+                          backgroundSize: 'contain',
                           height: '300px',
+                          margin: 0,
                         }}
                       >
                       </div>
@@ -130,16 +194,18 @@ function Projects() {
                         style={{
                           backgroundImage: `url(${Intern1_3})`,
                           backgroundPosition: 'center',
+                          backgroundSize: 'contain',
                           height: '300px',
+                          margin: 0,
                         }}
                       >
                       </div>
                     </div>
                   </Slide>
-                  <h4 style={{ textAlign: 'center', color: 'white' }}>
+                  <h4 style={{ textAlign: 'center', color: 'white', marginTop: '10px', marginBottom: '10px' }}>
                     <strong className="purple">Internship at CodeClause & Bharat Intern</strong>
                   </h4>
-                  <div style={{ marginTop: '10px', color: 'white' }}>
+                  <div style={{ color: 'white' }}>
                     <span>
                       Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions. 
                       Designed and implemented <strong className="purple">responsive web layouts</strong> using modern frameworks like React and Tailwind CSS, ensuring seamless performance across all devices. 
@@ -154,7 +220,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Intern2}
-              isProject={false}
+              isBlog={false}
               title={<strong className="purple">Salesforce Virtual Internship</strong>}
               description={(
                 <span>
@@ -172,7 +238,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Intern3}
-              isProject={false}
+              isBlog={false}
               title={<strong className="purple">Juniper Networks Virtual Internship</strong>}
               description={(
                 <span>
@@ -187,7 +253,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Intern4}
-              isProject={false}
+              isBlog={false}
               title={<strong className="purple">WSA Internship</strong>}
               description={(
                 <span>
@@ -209,7 +275,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={webture}
-              isProject={false}
+              isBlog={false}
               title={<strong className="purple">WEBTURE</strong>}
               description={(
                 <span>
@@ -222,7 +288,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={decode}
-              isProject={false}
+              isBlog={false}
               title={<strong className="purple">DECODE HOUR</strong>}
               description={(
                 <span>Participated in a <strong className="purple">Codeathon</strong> conducted by Newton School Coding Club SRMIST and it was an incredible experience! The mentors and organizers provided invaluable guidance, making the entire experience both educational and enjoyable. Competing alongside talented coders from diverse backgrounds was <strong className="purple">truly inspiring</strong> and has motivated me to continue honing my programming abilities.
@@ -232,187 +298,219 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-           <ProjectCard
-             isProject={false}
-             slides={
-               <div>
-                 <Slide autoplay={false}>
-                   <div className="each-slide-effect">
-                     <div
-                       style={{
-                         backgroundImage: `url(${sensors})`,
-                         backgroundPosition: 'center',
-                         height: '300px',
-                         paddingTop: '50px'
-                       }}
-                     >
-                     </div>
-                   </div>
-                   <div className="each-slide-effect">
-                     <div
-                       style={{
-                         backgroundImage: `url(${sensors2})`,
-                         backgroundPosition: 'center',
-                         height: '300px'
-                       }}
-                     >
-                     </div>
-                   </div>
-                 </Slide>
-                 <h4 style={{ textAlign: 'center', color: 'white' }}>
-                   <strong className="purple">Sensors and IoT For Smart Healthcare</strong>
-                 </h4>
-                 <div style={{ marginTop: '10px', color: 'white' }}>
-                   <span>
-                     Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals.
-                   </span>
-                 </div>
-               </div>
-             }
-           />
-         </Col>
+            <ProjectCard
+              isBlog={false}
+              slides={
+                <div style={{ margin: 0, padding: 0 }}>
+                  <Slide 
+                    autoplay={false}
+                    duration={0}
+                    transitionDuration={300}
+                    canSwipe={true}
+                    indicators={true}
+                    arrows={true}
+                  >
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${sensors})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${sensors2})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                  </Slide>
+                  <h4 style={{ textAlign: 'center', color: 'white', marginTop: '10px', marginBottom: '10px' }}>
+                    <strong className="purple">Sensors and IoT For Smart Healthcare</strong>
+                  </h4>
+                  <div style={{ color: 'white' }}>
+                    <span>
+                      Participated in a Workshop conducted by <strong className="purple">IE(I)</strong> on the Topic Sensors & IoT for Smart Healthcare and gained hands-on experience! The workshop provided deep insights into the <strong className="purple">integration of sensors and IoT technologies</strong> in healthcare, highlighting their potential to revolutionize patient monitoring and healthcare delivery. Engaging with industry experts allowed me to explore practical applications and network with like-minded professionals.
+                    </span>
+                  </div>
+                </div>
+              }
+            />
+          </Col>
 
-         <Col md={4} className="project-card">
-           <ProjectCard
-             isProject={false}
-             slides={
-               <div>
-                 <Slide autoplay={false}>
-                   <div className="each-slide-effect">
-                     <div
-                       style={{
-                         backgroundImage: `url(${ecobin})`,
-                         backgroundPosition: 'center',
-                         height: '300px',
-                       }}
-                     >
-                     </div>
-                   </div>
-                   <div className="each-slide-effect">
-                     <div
-                       style={{
-                         backgroundImage: `url(${ecobin2})`,
-                         backgroundPosition: 'center',
-                         height: '300px',
-                       }}
-                     >
-                     </div>
-                   </div>
-                 </Slide>
-                 <h4 style={{ textAlign: 'center', color: 'white' }}>
-                   <strong className="purple">ECOBIN HACKATHON</strong>
-                 </h4>
-                 <div style={{ marginTop: '10px', color: 'white' }}>
-                   <span style={{ color: 'white' }}>
-                     Participated in the 'Smart ECOBIN Hackathon' along with my teammates&nbsp;
-                     <strong className="purple">
-                       <a href="https://www.linkedin.com/in/rohanrdy/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
-                         Rohan Reddy
-                       </a>
-                     </strong>&nbsp;and&nbsp;
-                     <strong className="purple">
-                       <a href="https://www.linkedin.com/in/shivaram-kumar-v-r-b75919257/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
-                         Shivaram Kumar V.R
-                       </a>
-                     </strong>, organized on 
-                     <strong className="purple">&nbsp;'Engineers Day - 23'</strong> by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some 
-                     <strong className="purple">&nbsp;truly innovative ideas</strong> from fellow teams.
-                   </span>
-                 </div>
-               </div>
-             }
-           />
-         </Col>
-       </Row>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              slides={
+                <div style={{ margin: 0, padding: 0 }}>
+                  <Slide 
+                    autoplay={false}
+                    duration={0}
+                    transitionDuration={300}
+                    canSwipe={true}
+                    indicators={true}
+                    arrows={true}
+                  >
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${ecobin})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${ecobin2})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                  </Slide>
+                  <h4 style={{ textAlign: 'center', color: 'white', marginTop: '10px', marginBottom: '10px' }}>
+                    <strong className="purple">ECOBIN HACKATHON</strong>
+                  </h4>
+                  <div style={{ color: 'white' }}>
+                    <span>
+                      Participated in the 'Smart ECOBIN Hackathon' along with my teammates&nbsp;
+                      <strong className="purple">
+                        <a href="https://www.linkedin.com/in/rohanrdy/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+                          Rohan Reddy
+                        </a>
+                      </strong>&nbsp;and&nbsp;
+                      <strong className="purple">
+                        <a href="https://www.linkedin.com/in/shivaram-kumar-v-r-b75919257/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+                          Shivaram Kumar V.R
+                        </a>
+                      </strong>, organized on 
+                      <strong className="purple">&nbsp;'Engineers Day - 23'</strong> by the Department of Mechanical Engineering at SRM Institute of Science and Technology (SRMIST). It was an incredible experience collaborating with talented individuals to innovate and develop sustainable solutions for a cleaner and greener future. During the Smart ECOBIN Hackathon, I had the privilege of witnessing some 
+                      <strong className="purple">&nbsp;truly innovative ideas</strong> from fellow teams.
+                    </span>
+                  </div>
+                </div>
+              }
+            />
+          </Col>
+        </Row>
 
-       {/* VOLUNTEERING SECTION */}
-       <h1 className="project-heading" style={{ marginTop: "50px" }}>
-         <strong className="purple">Volunteering</strong>
-       </h1>
-       <p style={{ color: "white" }}>
-         Here are some volunteering activities I've been involved in
-       </p>
-       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-         <Col md={4} className="project-card">
-           <ProjectCard
-             isProject={false}
-             slides={
-               <div>
-                 <Slide autoplay={false}>
-                   <div className="each-slide-effect">
-                     <div
-                       style={{
-                         backgroundImage: `url(${volunteer1})`,
-                         backgroundPosition: 'center',
-                         height: '300px',
-                       }}
-                     >
-                     </div>
-                   </div>
-                   <div className="each-slide-effect">
-                     <div
-                       style={{
-                         backgroundImage: `url(${volunteer1_2})`,
-                         backgroundPosition: 'center',
-                         height: '300px',
-                       }}
-                     >
-                     </div>
-                   </div>
-                 </Slide>
-                 <h4 style={{ textAlign: 'center', color: 'white' }}>
-                   <strong className="purple">Emerging Trends in IoT and It's Applications</strong>
-                 </h4>
-                 <div style={{ marginTop: '10px', color: 'white' }}>
-                   <span>
-                     I was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a <strong className="purple">6-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR's Professional Development Programme.
-                   </span>
-                 </div>
-               </div>
-             }
-           />
-         </Col>
+        {/* VOLUNTEERING SECTION */}
+        <h1 className="project-heading" style={{ marginTop: "50px" }}>
+          <strong className="purple">Volunteering</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are some volunteering activities I've been involved in
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              slides={
+                <div style={{ margin: 0, padding: 0 }}>
+                  <Slide 
+                    autoplay={false}
+                    duration={0}
+                    transitionDuration={300}
+                    canSwipe={true}
+                    indicators={true}
+                    arrows={true}
+                  >
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${volunteer1})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                    <div className="each-slide-effect">
+                      <div
+                        style={{
+                          backgroundImage: `url(${volunteer1_2})`,
+                          backgroundPosition: 'center',
+                          backgroundSize: 'contain',
+                          height: '300px',
+                          margin: 0,
+                        }}
+                      >
+                      </div>
+                    </div>
+                  </Slide>
+                  <h4 style={{ textAlign: 'center', color: 'white', marginTop: '10px', marginBottom: '10px' }}>
+                    <strong className="purple">Emerging Trends in IoT and It's Applications</strong>
+                  </h4>
+                  <div style={{ color: 'white' }}>
+                    <span>
+                      I was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in IoT and its Applications', a <strong className="purple">6-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR's Professional Development Programme.
+                    </span>
+                  </div>
+                </div>
+              }
+            />
+          </Col>
 
-         <Col md={4} className="project-card">
-           <ProjectCard
-             imgPath={volunteer2}
-             isProject={false}
-             title={<strong className="purple">Emerging Trends in Artificial Intelligence</strong>}
-             description={(
-               <span>
-                 I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a <strong className="purple">3-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
-               </span>
-             )}
-           />
-         </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={volunteer2}
+              isBlog={false}
+              title={<strong className="purple">Emerging Trends in Artificial Intelligence</strong>}
+              description={(
+                <span>
+                  I Was one of the <strong className="purple">Student Coordinators</strong> for engaging an informative workshop: 'Emerging Trends in Artificial Intelligence', a <strong className="purple">3-day workshop</strong> organized by the ECE SRMIST KTR Department as part of SRMIST KTR'S Professional Development Programme.
+                </span>
+              )}
+            />
+          </Col>
 
-         <Col md={4} className="project-card">
-           <ProjectCard
-             imgPath={volunteer3}
-             isProject={false}
-             title={<strong className="purple">ABET Accrediation</strong>}
-             description={(
-               <span>I held the position of <strong className="purple">Student Representative for ABET Accreditation</strong> in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department.
-               </span>
-             )}
-           />
-         </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={volunteer3}
+              isBlog={false}
+              title={<strong className="purple">ABET Accrediation</strong>}
+              description={(
+                <span>I held the position of <strong className="purple">Student Representative for ABET Accreditation</strong> in the ECE Department at SRMIST, KTR, contributing in a professional capacity specifically tailored to the accreditation requirements for the ECE department.
+                </span>
+              )}
+            />
+          </Col>
 
-         <Col md={4} className="project-card">
-           <ProjectCard
-             imgPath={volunteer4}
-             isProject={false}
-             title={<strong className="purple">RAEEUCCI-2023</strong>}
-             description={(
-               <span>I was one of the representative to attend <strong className="purple">The 2nd International conference</strong> on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' <strong className="purple">(RAEEUCCI-2023)</strong> Industry Conclave.
-               </span>
-             )}
-           />
-         </Col>
-       </Row>
-     </Container>
-   </Container>
- );
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={volunteer4}
+              isBlog={false}
+              title={<strong className="purple">RAEEUCCI-2023</strong>}
+              description={(
+                <span>I was one of the representative to attend <strong className="purple">The 2nd International conference</strong> on 'Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence' <strong className="purple">(RAEEUCCI-2023)</strong> Industry Conclave.
+                </span>
+              )}
+            />
+          </Col>
+        </Row>
+      </Container>
+    </Container>
+  );
 }
 
 export default Projects;
