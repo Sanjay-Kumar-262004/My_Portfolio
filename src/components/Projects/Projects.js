@@ -139,13 +139,11 @@ function Projects() {
                     </div>
                   </Slide>
                   <h4 style={{ textAlign: 'center', color: 'white', marginTop: '10px', marginBottom: '10px' }}>
-                    <strong className="purple">Internship at CodeClause & Bharat Intern</strong>
+                    <strong className="purple">AWS Cloud Foundations and Cloud Architecting - AWS Academy</strong>
                   </h4>
                   <div style={{ color: 'white' }}>
                     <span>
-                      Created <strong className="purple">attractive user interfaces</strong> utilizing front-end technologies to enhance user experience and drive a 25% increase in website conversions. 
-                      Designed and implemented <strong className="purple">responsive web layouts</strong> using modern frameworks like React and Tailwind CSS, ensuring seamless performance across all devices. 
-                      Optimized website load times by <strong className="purple">30%</strong> through advanced CSS techniques such as lazy loading and efficient use of animations.
+                     I have engaged in the AWS Academy Cloud Foundations and AWS Academy Cloud Architecting virtual internship programs in which I obtained practical experience with core AWS services cloud architecture principles, and best practices. The programs taught me how to create scalable, reliable, and cost-effective cloud solutions, in addition to solidifying my understanding of AWS networking, security, storage, and compute services. This internship gave me some hands-on exposure to real-world cloud scenarios while building up my foundation of cloud computing and solution architecting.
                     </span>
                   </div>
                 </div>
