@@ -21,6 +21,7 @@ import Intern1_3 from "../../Assets/Projects/CodeClause2.jpg";
 import Intern2 from "../../Assets/Projects/Salesforce.jpg";
 import Intern3 from "../../Assets/Projects/Juniper.jpg";
 import Intern4 from "../../Assets/Projects/WSA.jpg";
+import Airstay from "../../Assets/Projects/Airstay.png";
 
 function Projects() {
   return (
@@ -44,12 +45,12 @@ function Projects() {
           {/* Example Web Project 1 - Replace with your actual projects */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="https://via.placeholder.com/400x250?text=Portfolio+Website" // Replace with your project image
+              imgPath={Airstay}
               isProject={true}
-              title={<strong className="purple">Personal Portfolio</strong>}
-              description="A responsive portfolio website built with React.js, showcasing my projects, skills, and experience. Features smooth animations, dark theme, and mobile-first design."
-              ghLink="https://github.com/yourusername/portfolio" // Replace with your GitHub link
-              demoLink="https://yourportfolio.com" // Replace with your live demo link
+              title={<strong className="purple">Airstay</strong>}
+              description="AirStay is a full-stack Airbnb prototype where my primary focus was building the frontend. It provides a clean and responsive interface where users can search, filter and browse stays by location, budget and amenities, showing my abilities with React and current UI development."
+              ghLink="https://github.com/Sanjay-Kumar-262004/AirStay"
+              demoLink="https://github.com/Sanjay-Kumar-262004/AirStay"
             />
           </Col>
 
