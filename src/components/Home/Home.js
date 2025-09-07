@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import homeLogo2 from "../../Assets/home-main1.svg";
-import homeLogo3 from "../../Assets/smart-watch.gif";
 
 import Particle from "../Particle";
 // import Home2 from "./Home2";
@@ -36,7 +35,7 @@ function Home() {
             <Col md={5} style={{ paddingBottom: 20 }}>
               <div className="floating-container">
                 <img
-                  src={homeLogo3}
+                  src={homeLogo2}
                   alt="home pic"
                   className="img-fluid floating-svg"
                   style={{ maxHeight: "350px" }}
