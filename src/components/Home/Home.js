@@ -123,8 +123,6 @@ function Home() {
           }
         }
       `}</style>
-
-      {/* <Home2 /> */}
     </section>
   );
 }
