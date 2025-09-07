@@ -4,17 +4,15 @@ import homeLogo from "../../Assets/home-main.svg";
 import homeLogo2 from "../../Assets/home-main1.svg";
 
 import Particle from "../Particle";
-// import Home2 from "./Home2";
 import Type from "./Type";
-// Project Update Check
 
 function Home() {
   return (
-    <section>
+    <section className="home-section-wrapper">
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row>
+          <Row className="align-items-center h-100">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There !{" "}
@@ -47,6 +45,42 @@ function Home() {
       </Container>
 
       <style jsx>{`
+        .home-section-wrapper {
+          height: 100vh;
+          overflow: hidden;
+        }
+
+        .home-section {
+          position: relative;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+          background: transparent !important;
+          z-index: 1;
+        }
+
+        /* Ensure Particle component is behind content */
+        .home-section > :global(.particles-js) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        }
+
+        .home-content {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+
         .floating-container {
           display: flex;
           justify-content: center;
@@ -57,11 +91,13 @@ function Home() {
         .floating-svg {
           animation: float 3s ease-in-out infinite;
           transition: all 0.3s ease;
+          filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
         }
 
         .floating-svg:hover {
           transform: scale(1.05);
           animation-play-state: paused;
+          filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
         }
 
         @keyframes float {
@@ -73,8 +109,41 @@ function Home() {
           }
         }
 
+        /* Wave animation for emoji */
+        .wave {
+          animation: wave 2s infinite;
+          transform-origin: 70% 70%;
+        }
+
+        @keyframes wave {
+          0%, 100% {
+            transform: rotate(0deg);
+          }
+          10%, 30% {
+            transform: rotate(14deg);
+          }
+          20% {
+            transform: rotate(-8deg);
+          }
+          40% {
+            transform: rotate(14deg);
+          }
+          50% {
+            transform: rotate(-4deg);
+          }
+          60% {
+            transform: rotate(10deg);
+          }
+        }
+
         /* Mobile responsiveness */
         @media (max-width: 768px) {
+          .home-section-wrapper,
+          .home-section,
+          .home-content {
+            height: 100vh;
+          }
+
           .floating-svg {
             max-height: 280px !important;
           }
@@ -87,9 +156,23 @@ function Home() {
               transform: translateY(-15px);
             }
           }
+
+          .home-header h1 {
+            font-size: 1.8rem;
+          }
+
+          .home-header .heading-name {
+            font-size: 1.6rem;
+          }
         }
 
         @media (max-width: 576px) {
+          .home-section-wrapper,
+          .home-section,
+          .home-content {
+            height: 100vh;
+          }
+
           .floating-svg {
             max-height: 220px !important;
           }
@@ -102,24 +185,27 @@ function Home() {
               transform: translateY(-10px);
             }
           }
-        }
 
-        /* Footer fix for small screens */
-        .home-section {
-          min-height: 100vh;
-          padding-bottom: 60px;
-        }
+          .home-header h1 {
+            font-size: 1.5rem;
+          }
 
-        @media (max-width: 768px) {
-          .home-section {
-            padding-bottom: 80px;
+          .home-header .heading-name {
+            font-size: 1.3rem;
+          }
+
+          .home-header div {
+            padding: 30px 0 !important;
           }
         }
 
-        @media (max-width: 576px) {
-          .home-section {
-            padding-bottom: 100px;
-          }
+        /* Override any Bootstrap margins/padding that might cause overflow */
+        :global(body) {
+          overflow-x: hidden;
+        }
+
+        :global(.container-fluid) {
+          padding: 0 !important;
         }
       `}</style>
     </section>
