@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import homeLogo2 from "../../Assets/home-main1.svg";
-import homeLogo3 from "../../Assets/bot.gif";
-import homeLogo4 from "../../Assets/Tools Bot.gif";
+import homeLogo3 from "../../Assets/smart-watch.gif";
 
 import Particle from "../Particle";
 // import Home2 from "./Home2";
