@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo1 from "../../Assets/home-main1.svg";
 import Particle from "../Particle";
-// import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
@@ -32,7 +31,6 @@ function Home() {
                 <Type />
               </div>
             </Col>
-
             <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
               <img
                 src={homeLogo1}
@@ -43,7 +41,76 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      {/* <Home2 /> */}
+
+      <style jsx>{`
+        /* Home section styling */
+        .home-section {
+          min-height: 100vh;
+          position: relative;
+          background: transparent;
+        }
+
+        /* Content above particles */
+        .home-content {
+          position: relative;
+          z-index: 2;
+          background: transparent;
+          padding-top: 100px;
+        }
+
+        /* Floating image animation */
+        .floating-img {
+          animation: float 3s ease-in-out infinite;
+          transition: all 0.3s ease;
+          border-radius: 12px;
+          max-height: 350px;
+        }
+
+        .floating-img:hover {
+          transform: scale(1.05);
+          animation-play-state: paused;
+        }
+
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+
+        /* Wave animation */
+        .wave {
+          animation: wave-animation 2.1s infinite;
+          transform-origin: 70% 70%;
+          display: inline-block;
+        }
+
+        @keyframes wave-animation {
+          0% { transform: rotate(0deg); }
+          10% { transform: rotate(14deg); }
+          20% { transform: rotate(-8deg); }
+          30% { transform: rotate(14deg); }
+          40% { transform: rotate(-4deg); }
+          50% { transform: rotate(10deg); }
+          60% { transform: rotate(0deg); }
+          100% { transform: rotate(0deg); }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+          .floating-img {
+            max-height: 280px !important;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .floating-img {
+            max-height: 220px !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
