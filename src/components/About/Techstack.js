@@ -48,11 +48,11 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
-        <h5>Python( Intermediate )</h5>
+        <h5>Python (Intermediate)</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaJava />
-        <h5>Java( Beginner )</h5>
+        <h5>Java (Beginner)</h5>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
@@ -63,7 +63,7 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
-        <h5>Node ( Basics )</h5>
+        <h5>Node (Basics)</h5>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiSolidity />
@@ -75,11 +75,11 @@ function Techstack() {
       
       <Col xs={4} md={2} className="tech-icons">
       <SiMongodb />
-        <h5>MongoDb ( Basics ) </h5>
+        <h5>MongoDb (Basics) </h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <TbFileTypeSql />
-        <h5>SQL ( Basics ) </h5>
+        <h5>SQL (Basics) </h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <LiaSalesforce />
