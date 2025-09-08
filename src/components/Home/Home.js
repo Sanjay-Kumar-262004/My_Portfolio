@@ -36,6 +36,9 @@ function Home() {
 =======
 
             <Col md={5} style={{ paddingBottom: 20 }}>
+<<<<<<< HEAD
+>>>>>>> parent of 665db66 (Photo Updated)
+=======
 >>>>>>> parent of 665db66 (Photo Updated)
               <img
                 src={homeLogo1}
