@@ -27,8 +27,6 @@ function Home() {
                 <Type />
               </div>
             </Col>
-
-            {/* ✅ Keep whichever version you want */}
             <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
               <img
                 src={homeLogo1}
