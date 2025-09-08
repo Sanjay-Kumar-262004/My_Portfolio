@@ -4,7 +4,7 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.jpg";
+import laptopImg from "../../Assets/about.jpeg";
 import Tilt from "react-parallax-tilt";
 import Toolstack from "./Toolstack";
 import AcademicPerformance from "./AcademicPerformance";
