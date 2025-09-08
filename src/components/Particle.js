@@ -43,3 +43,26 @@ function Particle() {
 
 export default Particle;
 
+// SYMBOLS //
+{/* <Particles
+  id="tsparticles"
+  options={{
+    particles: {
+      number: { value: 60 },
+      shape: {
+        type: "char",
+        character: {
+          value: ["S", "K", "{ }", "< />"], // customize with your initials / symbols
+          font: "Verdana",
+          style: "",
+          weight: "400",
+        },
+      },
+      size: { value: 20, random: true },
+      opacity: { value: 0.5 },
+      move: { enable: true, speed: 1, random: true },
+    },
+  }}
+/> */}
+
+
