@@ -3,53 +3,43 @@ import Particles from "react-tsparticles";
 
 function Particle() {
   return (
-    <Particles
-      id="tsparticles"
-      params={{
-        particles: {
-          number: {
-            value: 160,
-            density: {
-              enable: true,
-              value_area: 1500,
-            },
-          },
-          line_linked: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: "right",
-            speed: 0.05,
-          },
-          size: {
-            value: 1,
-          },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 5,
-              opacity_min: 0.10,
-            },
-          },
-        },
-        interactivity: {
-          events: {
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            push: {
-              particles_nb: 1,
-            },
-          },
-        },
-        retina_detect: true,
-      }}
-    />
+<Particles
+  id="tsparticles"
+  options={{
+    background: { color: "transparent" },
+    particles: {
+      number: { value: 200, density: { enable: true, value_area: 1000 } },
+      color: { value: ["#ff6ec7", "#00f5d4", "#ffdd00"] },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.7,
+        random: true,
+        anim: { enable: true, speed: 2, opacity_min: 0.3 },
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: { enable: true, speed: 2, size_min: 0.5 },
+      },
+      move: {
+        enable: true,
+        speed: 0.6,
+        random: true,
+        outModes: { default: "out" },
+      },
+    },
+    interactivity: {
+      events: { onHover: { enable: true, mode: "grab" } },
+      modes: {
+        grab: { distance: 120, line_linked: { opacity: 0.5 } },
+      },
+    },
+    retina_detect: true,
+  }}
+/>
+
   );
 }
 
 export default Particle;
+
