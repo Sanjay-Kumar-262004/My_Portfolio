@@ -31,7 +31,12 @@ function Home() {
                 <Type />
               </div>
             </Col>
+<<<<<<< HEAD
             <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
+=======
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+>>>>>>> parent of 665db66 (Photo Updated)
               <img
                 src={homeLogo1}
                 alt="home pic"
