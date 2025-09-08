@@ -7,17 +7,13 @@ import Type from "./Type";
 function Home() {
   return (
     <section>
-      <Container
-        fluid
-        className="home-section"
-        id="home"
-      >
+      <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row className="align-items-center">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There !{" "}
+                Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
@@ -27,19 +23,13 @@ function Home() {
                 <strong className="main-name"> SANJAY KUMAR S</strong>
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
-                <h1>Welcome to my Creative Corner !</h1>
+                <h1>Welcome to my Creative Corner!</h1>
                 <Type />
               </div>
             </Col>
-<<<<<<< HEAD
-            <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
-=======
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-<<<<<<< HEAD
->>>>>>> parent of 665db66 (Photo Updated)
-=======
->>>>>>> parent of 665db66 (Photo Updated)
+            {/* ✅ Keep whichever version you want */}
+            <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
               <img
                 src={homeLogo1}
                 alt="home pic"
@@ -80,7 +70,8 @@ function Home() {
         }
 
         @keyframes float {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0);
           }
           50% {
@@ -96,14 +87,30 @@ function Home() {
         }
 
         @keyframes wave-animation {
-          0% { transform: rotate(0deg); }
-          10% { transform: rotate(14deg); }
-          20% { transform: rotate(-8deg); }
-          30% { transform: rotate(14deg); }
-          40% { transform: rotate(-4deg); }
-          50% { transform: rotate(10deg); }
-          60% { transform: rotate(0deg); }
-          100% { transform: rotate(0deg); }
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(14deg);
+          }
+          20% {
+            transform: rotate(-8deg);
+          }
+          30% {
+            transform: rotate(14deg);
+          }
+          40% {
+            transform: rotate(-4deg);
+          }
+          50% {
+            transform: rotate(10deg);
+          }
+          60% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
         }
 
         /* Mobile responsiveness */
