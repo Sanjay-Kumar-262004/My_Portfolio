@@ -9,7 +9,7 @@ function Particle() {
     background: { color: "transparent" },
     particles: {
       number: { value: 200, density: { enable: true, value_area: 1000 } },
-      color: { value: ["#ff6ec7", "#00f5d4", "#ffdd00"] },
+      color: { value: ["#c770f0", "#41C9E2", "#ffdd00", "#008DDA", "#8a49a8"] },
       shape: { type: "circle" },
       opacity: {
         value: 0.7,

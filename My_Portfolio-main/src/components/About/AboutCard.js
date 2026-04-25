@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Typewriter from "typewriter-effect";
 
 function AboutCard() {
   return (
@@ -21,33 +20,11 @@ function AboutCard() {
           </p>
         </blockquote>
 
-        {/* Typewriter section with proper mobile handling */}
         <div className="typewriter-section">
           <div className="typewriter-container">
-            <Typewriter
-              options={{
-                strings: [
-                  "There will always be hurdles in life, but if you want to achieve a goal, you must continue. - Malala Yousafzai.."
-                ],
-                autoStart: true,
-                loop: false,
-                delay: 50,
-                deleteSpeed: Infinity,
-                cursor: '',
-              }}
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("There will always be hurdles in life, but if you want to achieve a goal, you must continue. - Malala Yousafzai.")
-                  .pauseFor(1000)
-                  .callFunction(() => {
-                    const cursor = document.querySelector('.Typewriter__cursor');
-                    if (cursor) {
-                      cursor.style.display = 'none';
-                    }
-                  })
-                  .start();
-              }}
-            />
+            <p style={{ margin: 0 }}>
+              "There will always be hurdles in life, but if you want to achieve a goal, you must continue." - Malala Yousafzai
+            </p>
           </div>
         </div>
       </Card.Body>

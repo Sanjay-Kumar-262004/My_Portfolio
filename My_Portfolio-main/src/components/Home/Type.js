@@ -12,18 +12,18 @@ function Type() {
       }}
       onInit={(typewriter) => {
         typewriter
-          .typeString('<span style="color: white;">I DO </span>Code')
+          .typeString('<span style="color: white;">I DO </span>PLC Programming')
           .pauseFor(1000)
-          .deleteChars(4)
-          .typeString('Read Books')
+          .deleteChars(15)
+          .typeString('SCADA Development')
+          .pauseFor(1000)
+          .deleteChars(17)
+          .typeString('HMI Design')
           .pauseFor(1000)
           .deleteChars(10)
-          .typeString('Develop Sites')
+          .typeString('Industrial Automation')
           .pauseFor(1000)
-          .deleteChars(13)
-          .typeString('Follow Tech')
-          .pauseFor(1000)
-          .deleteChars(11)
+          .deleteChars(21)
           .start();
       }}
     />

@@ -1,8 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { FaMicrochip, FaNetworkWired, FaTools, FaBuilding } from "react-icons/fa";
+import { FaMicrochip, FaNetworkWired, FaTools, FaBuilding, FaIndustry } from "react-icons/fa";
 import { MdDesktopWindows, MdSensors } from "react-icons/md";
-import { SiRockwellautomation } from "react-icons/si";
 import { BsLightningCharge } from "react-icons/bs";
 
 function Techstack() {
@@ -17,7 +16,7 @@ function Techstack() {
         <h5>SCADA & HMI Systems</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRockwellautomation />
+        <FaIndustry />
         <h5>Studio 5000 Logix Designer</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">

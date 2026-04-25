@@ -28,10 +28,17 @@ function About() {
             <Aboutcard />
           </Col>
           <Col
-      md={5}
-      style={{ paddingTop: "10px", paddingBottom: "50px", borderRadius: "5px" }}
-      className="about-img"
-    >
+            md={5}
+            style={{ 
+              paddingTop: "10px", 
+              paddingBottom: "50px", 
+              borderRadius: "5px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+            className="about-img"
+          >
       <Tilt>
         <img src={laptopImg} alt="about" className="img-fluid" style={{ borderRadius: "50%" }} />
       </Tilt>

@@ -80,7 +80,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #121212a9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -295,7 +295,7 @@ button:focus {
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #41C9E2 !important;
+  color: #008DDA !important;
 }
 
 @media (max-width: 767px) {
@@ -375,7 +375,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #F7EEDD;
+  background: #F0F0F0;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -383,13 +383,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #008DDA;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #008DDA;
+  box-shadow: 0 0 5px #008DDA;
+  text-shadow: 0 0 2px #008DDA;
 }
 
 .social-icons {
@@ -399,14 +399,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #008DDA !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: transparent;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -464,17 +464,20 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px #F7EEDD !important;
+  box-shadow: 0 4px 5px 3px #F0F0F0 !important;
   color: white !important;
   background-color: transparent !important;
   padding-top: 20px !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
 }
 .project-card-view:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px #41C9E2 !important;
+  box-shadow: 0 4px 4px 5px #B32015 !important;
 }
 
 .card-img-top {
@@ -492,13 +495,13 @@ button:focus {
 .btn-primary {
   color: #fff !important;
   background-color: #008DDA !important;
-  border-color: #41C9E2 !important;
+  border-color: #008DDA !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
   background-color: #176B87 !important;
-  border-color: #6d20c5d7 !important;
+  border-color: #008DDAd7 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -528,7 +531,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid #41C9E2 !important;
+  border: 1.7px solid #B32015 !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -609,23 +612,23 @@ button:focus {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   max-width: 850px;
   margin: 0 auto;
-  border: 2px solid #8a49a8;
+  border: 2px solid #008DDA;
   animation: glowing 1.5s infinite;
 }
 
 /* Glowing animation */
 @keyframes glowing {
   0% {
-    border-color: #8a49a8;
-    box-shadow: 0 0 5px #8a49a8, 0 0 10px #8a49a8, 0 0 15px #8a49a8;
+    border-color: #008DDA;
+    box-shadow: 0 0 5px #DA291C, 0 0 10px #DA291C, 0 0 15px #DA291C;
   }
   50% {
-    border-color: #a56bc4;
-    box-shadow: 0 0 10px #a56bc4, 0 0 20px #a56bc4, 0 0 25px #a56bc4;
+    border-color: #F23D30;
+    box-shadow: 0 0 10px #F23D30, 0 0 20px #F23D30, 0 0 25px #F23D30;
   }
   100% {
-    border-color: #8a49a8;
-    box-shadow: 0 0 5px #8a49a8, 0 0 10px #8a49a8, 0 0 15px #8a49a8;
+    border-color: #008DDA;
+    box-shadow: 0 0 5px #DA291C, 0 0 10px #DA291C, 0 0 15px #DA291C;
   }
 }
 
@@ -672,7 +675,7 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #DA291C;
   position: relative;
 }
 
@@ -709,7 +712,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #008DDA;
 }
 
 .like-item {
@@ -719,8 +722,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: #008DDA5e !important;
+  border-color: #008DDA5e !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -729,8 +732,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #008dda86 !important;
+  border-color: #008dda86 !important;
 }
 
 .animate-like {
@@ -754,7 +757,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #008DDA5e !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -762,8 +765,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #008dda86 !important;
+  border-color: #008dda86 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
@@ -828,13 +831,13 @@ button:focus {
 
 @keyframes glowing {
   0% {
-    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+    box-shadow: 0 0 5px rgba(0, 141, 218, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(108, 99, 255, 0.6);
+    box-shadow: 0 0 20px rgba(0, 141, 218, 0.6);
   }
   100% {
-    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+    box-shadow: 0 0 5px rgba(0, 141, 218, 0.3);
   }
 }
 .update-marquee {
