@@ -26,10 +26,10 @@ function Toolstack() {
         <MdOutlinePrecisionManufacturing />
         <h5>Connected Components Workbench</h5>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" style={{ opacity: 0.5 }}>
+      {/* <Col xs={4} md={2} className="tech-icons" style={{ opacity: 0.5 }}>
         <FaCogs />
         <h5>Future Tool</h5>
-      </Col>
+      </Col> */}
     </Row>
   );
 }

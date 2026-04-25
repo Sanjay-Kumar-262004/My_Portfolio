@@ -6,19 +6,6 @@ import 'react-slideshow-image/dist/styles.css';
 import { Slide } from 'react-slideshow-image';
 import { FaArrowUp } from 'react-icons/fa';
 
-// Import images
-import webture from "../../Assets/Projects/webture.jpg";
-import decode from "../../Assets/Projects/decode.jpg";
-import sensors from "../../Assets/Projects/sensors.jpg";
-import sensors2 from "../../Assets/Projects/sensors2.jpg";
-import ecobin from "../../Assets/Projects/ecobin.jpg";
-import ecobin2 from "../../Assets/Projects/ecobin2.jpg";
-import volunteer1 from "../../Assets/Projects/coordinator1.jpg";
-import volunteer1_2 from "../../Assets/Projects/coordinator2.jpg";
-import volunteer2 from "../../Assets/Projects/PDP Certificate.jpeg";
-import volunteer3 from "../../Assets/Projects/abet.jpg";
-import volunteer4 from "../../Assets/Projects/conclave.jpg";
-
 // New Images
 import delivery_robot from "../../Assets/Projects/delivery_robot_1777094182633.png";
 import v2v_ultrasonic from "../../Assets/Projects/v2v_ultrasonic_1777094202935.png";
@@ -33,7 +20,7 @@ function Projects() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      
+
       setShowScrollTop(scrollTop > 300);
 
       const webProjectsSection = document.getElementById('web-projects');
@@ -159,7 +146,7 @@ function Projects() {
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={plc_sorting}
                 isBlog={false}
@@ -167,7 +154,7 @@ function Projects() {
                 title={<strong className="purple">PLC-Based Automated Sorting System</strong>}
                 description="[Placeholder Project] A simulated industrial sorting system using programmable logic controllers (PLCs) to sort items based on sensors and material properties. The logic controls pneumatic actuators and conveyor belts for seamless, continuous operation, ensuring high throughput and reliability."
               />
-            </Col>
+            </Col> */}
           </Row>
         </div>
 
@@ -183,7 +170,7 @@ function Projects() {
       {/* Scroll Up Navigation Button */}
       {showScrollTop && (
         <div className="scroll-top-container">
-          <div 
+          <div
             className="scroll-top-button"
             onClick={scrollToSection}
             title={getSectionLabel()}

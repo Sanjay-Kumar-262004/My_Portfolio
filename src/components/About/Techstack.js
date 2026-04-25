@@ -35,14 +35,14 @@ function Techstack() {
         <BsLightningCharge />
         <h5>Electrical Systems & HVAC Controls</h5>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" style={{ opacity: 0.5 }}>
+      {/* <Col xs={4} md={2} className="tech-icons" style={{ opacity: 0.5 }}>
         <FaTools />
         <h5>Future Addition</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons" style={{ opacity: 0.5 }}>
         <FaTools />
         <h5>Future Addition</h5>
-      </Col>
+      </Col> */}
     </Row>
   );
 }
