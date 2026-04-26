@@ -29,9 +29,9 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ 
-              paddingTop: "10px", 
-              paddingBottom: "50px", 
+            style={{
+              paddingTop: "10px",
+              paddingBottom: "50px",
               borderRadius: "5px",
               display: "flex",
               justifyContent: "center",
@@ -39,10 +39,10 @@ function About() {
             }}
             className="about-img"
           >
-      <Tilt>
-        <img src={laptopImg} alt="about" className="img-fluid" style={{ borderRadius: "50%" }} />
-      </Tilt>
-    </Col>
+            <Tilt>
+              <img src={laptopImg} alt="about" className="img-fluid" style={{ borderRadius: "50%" }} />
+            </Tilt>
+          </Col>
         </Row>
         <h1 className="project-heading">
           Academic <strong className="purple">Performance </strong>

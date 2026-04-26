@@ -3,45 +3,36 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import 'react-slideshow-image/dist/styles.css';
-import { Slide } from 'react-slideshow-image';
 import { FaArrowUp } from 'react-icons/fa';
 
-// New Images
 import delivery_robot from "../../Assets/Projects/delivery_robot_1777094182633.png";
 import v2v_ultrasonic from "../../Assets/Projects/v2v_ultrasonic_1777094202935.png";
-import plc_sorting from "../../Assets/Projects/plc_sorting_1777094218721.png";
 import rockwell_intern from "../../Assets/Projects/rockwell_logo_new.png";
 import Awards from "../About/Awards";
 
 function Projects() {
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const [currentSection, setCurrentSection] = useState('web-projects');
+  const [currentSection, setCurrentSection] = useState('internships');
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-
       setShowScrollTop(scrollTop > 300);
 
-      const webProjectsSection = document.getElementById('web-projects');
       const internshipsSection = document.getElementById('internships');
-      const workshopsSection = document.getElementById('workshops');
-      const volunteeringSection = document.getElementById('volunteering');
+      const webProjectsSection = document.getElementById('web-projects');
+      const awardsSection = document.getElementById('awards');
 
-      if (webProjectsSection && internshipsSection && workshopsSection && volunteeringSection) {
+      if (internshipsSection && webProjectsSection && awardsSection) {
+        const awardsTop = awardsSection.offsetTop;
         const webProjectsTop = webProjectsSection.offsetTop;
-        const internshipsTop = internshipsSection.offsetTop;
-        const workshopsTop = workshopsSection.offsetTop;
-        const volunteeringTop = volunteeringSection.offsetTop;
 
-        if (scrollTop >= volunteeringTop - 100) {
-          setCurrentSection('volunteering');
-        } else if (scrollTop >= workshopsTop - 100) {
-          setCurrentSection('workshops');
-        } else if (scrollTop >= internshipsTop - 100) {
-          setCurrentSection('internships');
-        } else {
+        if (scrollTop >= awardsTop - 100) {
+          setCurrentSection('awards');
+        } else if (scrollTop >= webProjectsTop - 100) {
           setCurrentSection('web-projects');
+        } else {
+          setCurrentSection('internships');
         }
       }
     };
@@ -53,17 +44,14 @@ function Projects() {
   const scrollToSection = () => {
     let targetSection;
     switch (currentSection) {
-      case 'volunteering':
-        targetSection = 'workshops';
+      case 'awards':
+        targetSection = 'web-projects';
         break;
-      case 'workshops':
+      case 'web-projects':
         targetSection = 'internships';
         break;
-      case 'internships':
-        targetSection = 'web-projects';
-        break;
       default:
-        targetSection = 'web-projects';
+        targetSection = 'internships';
     }
 
     const element = document.getElementById(targetSection);
@@ -74,12 +62,10 @@ function Projects() {
 
   const getSectionLabel = () => {
     switch (currentSection) {
-      case 'volunteering':
-        return 'Go to Workshops';
-      case 'workshops':
-        return 'Go to Internships';
-      case 'internships':
+      case 'awards':
         return 'Go to Projects';
+      case 'web-projects':
+        return 'Go to Experience';
       default:
         return 'Go to Top';
     }
@@ -89,7 +75,6 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-
 
         {/* WORK EXPERIENCE SECTION */}
         <div id="internships">
@@ -145,16 +130,6 @@ function Projects() {
                 paperLink="https://ieeexplore.ieee.org/document/11048346"
               />
             </Col>
-
-            {/* <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={plc_sorting}
-                isBlog={false}
-                isProject={true}
-                title={<strong className="purple">PLC-Based Automated Sorting System</strong>}
-                description="[Placeholder Project] A simulated industrial sorting system using programmable logic controllers (PLCs) to sort items based on sensors and material properties. The logic controls pneumatic actuators and conveyor belts for seamless, continuous operation, ensuring high throughput and reliability."
-              />
-            </Col> */}
           </Row>
         </div>
 
@@ -167,7 +142,7 @@ function Projects() {
         </div>
       </Container>
 
-      {/* Scroll Up Navigation Button */}
+      {/* Scroll Navigation Button */}
       {showScrollTop && (
         <div className="scroll-top-container">
           <div
@@ -200,7 +175,7 @@ function Projects() {
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          box-shadow: 0 4px 20px rgba(199, 112, 240, 0.3);
+          box-shadow: 0 4px 20px rgba(0, 141, 218, 0.3);
           transition: all 0.3s ease;
           position: relative;
           font-size: 20px;

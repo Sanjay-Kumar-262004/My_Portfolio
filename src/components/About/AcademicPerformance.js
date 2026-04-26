@@ -27,15 +27,6 @@ function AcademicPerformance() {
     textAlign: 'center' // Changed to center
   };
 
-  const overallRowStyle = {
-    backgroundColor: 'transparent',
-    color: '#008DDA',
-    fontWeight: 'bold',
-    padding: '12px',
-    border: '1px solid #F7EEDD',
-    textAlign: 'center' // Changed to center
-  };
-
   // SGPA data for the graph
   const sgpaData = [
     { semester: 'Sem 1', sgpa: 9.80 },
