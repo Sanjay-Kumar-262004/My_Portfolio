@@ -41,6 +41,8 @@ function AboutCard() {
           </p>
         </blockquote>
 
+        <div style={{ height: "20px" }}></div>
+
         {/* Quote — animates letter-by-letter when scrolled into view, runs once */}
         <div ref={quoteRef} className="typewriter-section">
           <div className="typewriter-container">
@@ -64,6 +66,7 @@ function AboutCard() {
             )}
           </div>
         </div>
+        <div style={{ paddingBottom: "30px" }}></div>
       </Card.Body>
 
       <style jsx>{`
@@ -73,10 +76,20 @@ function AboutCard() {
           width: 100%;
         }
 
+        .typewriter-section {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          padding: 0;
+          width: 100%;
+          display: block !important;
+          clear: both !important;
+          position: relative;
+        }
+
         .typewriter-container {
           color: rgb(155, 126, 172);
           font-size: 0.9rem;
-          padding: 20px;
+          padding: 25px;
           text-align: center;
           width: 100%;
           box-sizing: border-box;
@@ -86,6 +99,7 @@ function AboutCard() {
           background: rgba(155, 126, 172, 0.05);
           border: 1px solid rgba(155, 126, 172, 0.2);
           height: auto !important;
+          min-height: 80px;
           display: block !important;
           overflow: visible !important;
         }
@@ -96,6 +110,7 @@ function AboutCard() {
           overflow-wrap: break-word !important;
           white-space: normal !important;
           display: block !important;
+          word-break: break-word !important;
         }
 
         /* Cursor stays visible and blinks after typing — 'waiting to type' feel */

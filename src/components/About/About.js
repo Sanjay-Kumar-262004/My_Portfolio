@@ -37,7 +37,7 @@ function About() {
               justifyContent: "center",
               alignItems: "center"
             }}
-            className="about-img"
+            className="about-img mt-4"
           >
             <Tilt>
               <img src={laptopImg} alt="about" className="img-fluid" style={{ borderRadius: "50%" }} />
