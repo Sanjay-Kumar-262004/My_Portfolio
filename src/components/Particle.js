@@ -9,21 +9,22 @@ function Particle() {
         background: { color: "transparent" },
         fpsLimit: 60,
         particles: {
-          number: { value: 120, density: { enable: true, value_area: 800 } },
+          number: { value: 70, density: { enable: true, value_area: 900 } },
           color: { value: ["#008DDA", "#41C9E2", "#ACE2E1", "#00c8ff", "#005f99"] },
           shape: {
             type: "char",
             character: {
-              value: ["Ω", "⏚", "0", "1", "⊕", "→", "⚡", "∿", "≡", "⊖", "A", "V", "⌂", "⊗", "∞"],
+              // Electrical & automation symbols
+              value: ["⚡", "⌁", "🔌", "🔋", "💡", "⚙", "🛠", "⚙️", "⏻", "⏼", "⏽", "⏾", "⏚", "⏧", "⎓", "∿", "Ω", "℧", "⧑", "⧒", "⧓", "⧔", "⧕", "⧖", "⧗", "⊕", "⊗", "⌖", "⌗", "⌀", "⌑", "⌨", "⍔", "⍕", "⍖", "⍗", "📶", "☎", "⏏", "⍰", "☠"],
               font: "Verdana",
               style: "",
               weight: "400",
             },
           },
           opacity: {
-            value: 0.6,
+            value: 0.5,
             random: true,
-            anim: { enable: true, speed: 0.8, opacity_min: 0.15, sync: false },
+            anim: { enable: true, speed: 0.6, opacity_min: 0.15, sync: false },
           },
           size: {
             value: 16,
@@ -35,36 +36,28 @@ function Particle() {
           },
           move: {
             enable: true,
-            speed: 0.9,
+            speed: 0.7,
             direction: "none",
             random: true,
             straight: false,
             outModes: { default: "out" },
             bounce: false,
-            attract: { enable: false },
           },
         },
         interactivity: {
-          detect_on: "window",
+          detect_on: "canvas",
           events: {
-            onHover: { enable: true, mode: "grab" },
+            onHover: { enable: true, mode: ["repulse", "grab"] },
             onClick: { enable: true, mode: "push" },
             resize: true,
           },
           modes: {
-            repulse: { distance: 140, duration: 0.4, speed: 1 },
+            repulse: { distance: 120, duration: 0.4 },
             grab: {
-              distance: 180,
-              line_linked: { opacity: 0.6 },
+              distance: 160,
+              line_linked: { opacity: 0.35 },
             },
-            push: { particles_nb: 5 },
-            bubble: {
-              distance: 200,
-              size: 20,
-              duration: 2,
-              opacity: 0.8,
-              speed: 3,
-            },
+            push: { particles_nb: 3 },
           },
         },
         retina_detect: true,
